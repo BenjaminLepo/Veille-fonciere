@@ -66,10 +66,10 @@ footer{max-width:1100px;margin:0 auto;padding:8px 16px 32px;color:var(--mute);fo
 </div></div>
 <main id="list"></main>
 <footer>Mise à jour automatique chaque lundi à partir des alertes Leboncoin et Bien'ici. Zonage PLU indicatif, à confirmer sur le Géoportail de l'Urbanisme.</footer>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.116.0/dist/umd/supabase.js"></script>
 <script>
 const SUPABASE_URL="https://yfzejzxdaujnvuzxcqvp.supabase.co";
-const SUPABASE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlmemVqenhkYXVqbnZ1enhjcXZwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM4MDE1MjcsImV4cCI6MjEwOTM3NzUyN30.SqSX9lKnOAxVWftG2u41oepEtGQCHCxfAN_-YB2HeAo";
+const SUPABASE_KEY="sb_publishable_i9-JAAq3EXUPXeXvhVetug_Pg34Zo07";
 const LIB={nouveau:"Nouveau",a_etudier:"À étudier",contacte:"Contacté",retenu:"Retenu",ecarte:"Écarté"};
 const fmt=n=>n==null?"n.c.":Math.round(n).toLocaleString("fr-FR");
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
