@@ -40,6 +40,14 @@ main{max-width:1100px;margin:0 auto;padding:16px;display:grid;grid-template-colu
 .hist{font-size:12px;color:var(--warn)}
 .links a{color:var(--acc);font-size:14px;margin-right:12px}
 .empty{grid-column:1/-1;text-align:center;color:var(--mute);padding:40px}
+#auth{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:14px;font-size:14px;color:var(--mute)}
+#auth input{min-width:220px}
+button{font:inherit;cursor:pointer;border-radius:8px;padding:7px 12px;border:1px solid var(--acc);background:var(--acc);color:#fff}
+button.ghost{background:transparent;color:var(--acc)}
+.edit{display:flex;flex-direction:column;gap:6px;border-top:1px dashed var(--line);padding-top:8px}
+.edit select,.edit textarea{font:inherit;font-size:14px;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 8px}
+.edit textarea{min-height:52px;resize:vertical}
+.saved{font-size:12px;color:var(--ok)}.err{color:var(--bad)}
 footer{max-width:1100px;margin:0 auto;padding:8px 16px 32px;color:var(--mute);font-size:12px}
 </style>
 </head>
@@ -48,6 +56,7 @@ footer{max-width:1100px;margin:0 auto;padding:8px 16px 32px;color:var(--mute);fo
   <h1>Veille foncière — communes SRU Nord, Pas-de-Calais, Oise</h1>
   <div class="sub" id="maj">Chargement…</div>
   <div class="stats" id="stats"></div>
+  <div id="auth"></div>
 </header>
 <div class="bar"><div>
   <input type="search" id="q" placeholder="Rechercher une commune, un type…">
@@ -57,12 +66,17 @@ footer{max-width:1100px;margin:0 auto;padding:8px 16px 32px;color:var(--mute);fo
 </div></div>
 <main id="list"></main>
 <footer>Mise à jour automatique chaque lundi à partir des alertes Leboncoin et Bien'ici. Zonage PLU indicatif, à confirmer sur le Géoportail de l'Urbanisme.</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
 <script>
+const SUPABASE_URL="https://yfzejzxdaujnvuzxcqvp.supabase.co";
+const SUPABASE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlmemVqenhkYXVqbnZ1enhjcXZwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM4MDE1MjcsImV4cCI6MjEwOTM3NzUyN30.SqSX9lKnOAxVWftG2u41oepEtGQCHCxfAN_-YB2HeAo";
 const LIB={nouveau:"Nouveau",a_etudier:"À étudier",contacte:"Contacté",retenu:"Retenu",ecarte:"Écarté"};
 const fmt=n=>n==null?"n.c.":Math.round(n).toLocaleString("fr-FR");
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const safeUrl=u=>/^https:\/\//.test(u||"")?u:"#";
-let DATA=[];
+let DATA=[],SB=null,EDIT=false,USER=null;
+const SITE=location.origin+location.pathname;
+try{if(window.supabase&&!SUPABASE_URL.startsWith("__"))SB=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);}catch(e){}
 function zonage(z){if(!z||!z.statut)return '<span class="chip">Zonage à vérifier</span>';
   const c={oui:"constructible",non:"non constructible",partiel:"partiellement constructible"}[z.constructible]||"zonage inconnu";
   return `<span class="chip">${esc(z.zone?z.zone+" · ":"")}${c} (${esc(z.statut)})</span>`}
@@ -76,8 +90,43 @@ function card(f){
   <div class="chips"><span class="chip s-${esc(f.statut)}">${LIB[f.statut]||esc(f.statut)}</span>${zonage(f.zonage)}<span class="chip">${esc(f.source)}</span><span class="chip">vu le ${esc((f.dateAnnonce||"").split("-").reverse().join("/"))}</span></div>
   ${baisse?`<div class="hist">Baisse de prix : ${fmt(h[0].prix)} → ${fmt(h[h.length-1].prix)} €</div>`:""}
   <div class="why">${esc(f.pourquoi)}</div>
+  ${EDIT?editBlock(f):""}
   <div class="links"><a href="${esc(safeUrl(f.url))}" target="_blank" rel="noopener">Voir l'annonce</a>${autres}</div>
   </article>`}
+function editBlock(f){
+  const opts=Object.entries(LIB).map(([k,v])=>`<option value="${k}"${k===f.statut?" selected":""}>${v}</option>`).join("");
+  return `<div class="edit" data-id="${esc(f.id)}"><select class="e-st">${opts}</select>
+  <textarea class="e-note" placeholder="Note (visible des seuls éditeurs)">${esc(f.note||"")}</textarea>
+  <div><button class="e-save">Enregistrer</button> <span class="e-msg"></span>${f.par?`<span class="e-msg"> modifié par ${esc(f.par)}</span>`:""}</div></div>`}
+async function save(box){
+  const id=box.dataset.id,statut=box.querySelector(".e-st").value,note=box.querySelector(".e-note").value,msg=box.querySelector(".e-msg");
+  msg.className="e-msg";msg.textContent="Enregistrement…";
+  const {error}=await SB.from("statuts").upsert({id,statut,note});
+  if(error){msg.className="e-msg err";msg.textContent="Échec : "+error.message;return}
+  const f=DATA.find(x=>x.id===id);if(f){f.statut=statut;f.note=note;f.par=USER}
+  msg.className="e-msg saved";msg.textContent="Enregistré";stats();
+}
+document.addEventListener("click",e=>{const b=e.target.closest(".e-save");if(b)save(b.closest(".edit"))});
+async function auth(){
+  const el=document.getElementById("auth");
+  if(!SB){el.textContent="";return}
+  const {data:{session}}=await SB.auth.getSession();
+  if(!session){
+    el.innerHTML='<span>Modifier les statuts :</span><input type="email" id="mail" placeholder="votre e-mail"><button id="go">Recevoir un lien de connexion</button><span id="amsg"></span>';
+    document.getElementById("go").onclick=async()=>{const m=document.getElementById("mail").value.trim();if(!m)return;
+      const {error}=await SB.auth.signInWithOtp({email:m,options:{emailRedirectTo:SITE}});
+      document.getElementById("amsg").textContent=error?"Erreur : "+error.message:"Lien envoyé, ouvrez votre boîte mail.";};
+    EDIT=false;return}
+  USER=session.user.email;
+  const {data:ed}=await SB.from("editeurs").select("email");
+  EDIT=!!(ed&&ed.length);
+  el.innerHTML=`<span>Connecté : ${esc(USER)}${EDIT?"":" (lecture seule : adresse non autorisée)"}</span><button class="ghost" id="out">Se déconnecter</button>`;
+  document.getElementById("out").onclick=async()=>{await SB.auth.signOut();location.reload()};
+  if(EDIT){const {data}=await SB.from("statuts").select("id,statut,note,par");
+    const m=new Map((data||[]).map(r=>[r.id,r]));DATA.forEach(f=>{const r=m.get(f.id);if(r){f.statut=r.statut;f.note=r.note;f.par=r.par}})}
+}
+function stats(){const n=s=>DATA.filter(f=>f.statut===s).length;
+  document.getElementById("stats").innerHTML=[["Fonciers suivis",DATA.length],["Nouveaux",n("nouveau")],["À étudier",n("a_etudier")],["Contactés",n("contacte")],["Retenus",n("retenu")]].map(([a,b])=>`<div class="stat"><b>${b}</b><span>${a}</span></div>`).join("")}
 function render(){
   const q=document.getElementById("q").value.trim().toLowerCase(),dep=document.getElementById("dep").value,st=document.getElementById("st").value,tri=document.getElementById("tri").value;
   let l=DATA.filter(f=>(!dep||f.dep===dep)&&(st===""||(st==="actifs"?f.statut!=="ecarte":f.statut===st))&&(!q||[f.commune,f.titre,f.type,f.source].join(" ").toLowerCase().includes(q)));
@@ -89,9 +138,8 @@ fetch("data.json?"+Date.now()).then(r=>r.json()).then(d=>{
   DATA=d.fonciers||[];
   const m=d.maj?new Date(d.maj):null;
   document.getElementById("maj").textContent="Dernière mise à jour : "+(m?m.toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long",year:"numeric"}):"inconnue");
-  const n=s=>DATA.filter(f=>f.statut===s).length;
-  document.getElementById("stats").innerHTML=[["Fonciers suivis",DATA.length],["Nouveaux",n("nouveau")],["À étudier",n("a_etudier")],["Contactés",n("contacte")],["Retenus",n("retenu")]].map(([a,b])=>`<div class="stat"><b>${b}</b><span>${a}</span></div>`).join("");
-  render();
+  stats();render();
+  auth().then(()=>{stats();render()}).catch(()=>{});
 }).catch(()=>{document.getElementById("maj").textContent="Données indisponibles pour le moment.";});
 ["q","dep","st","tri"].forEach(i=>document.getElementById(i).addEventListener("input",render));
 </script>
