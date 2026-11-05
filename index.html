@@ -66,7 +66,6 @@ footer{max-width:1100px;margin:0 auto;padding:8px 16px 32px;color:var(--mute);fo
 </div></div>
 <main id="list"></main>
 <footer>Mise à jour automatique chaque lundi à partir des alertes Leboncoin et Bien'ici. Zonage PLU indicatif, à confirmer sur le Géoportail de l'Urbanisme.</footer>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.116.0/dist/umd/supabase.js"></script>
 <script>
 const SUPABASE_URL="https://yfzejzxdaujnvuzxcqvp.supabase.co";
 const SUPABASE_KEY="sb_publishable_i9-JAAq3EXUPXeXvhVetug_Pg34Zo07";
@@ -74,9 +73,10 @@ const LIB={nouveau:"Nouveau",a_etudier:"À étudier",contacte:"Contacté",retenu
 const fmt=n=>n==null?"n.c.":Math.round(n).toLocaleString("fr-FR");
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const safeUrl=u=>/^https:\/\//.test(u||"")?u:"#";
-let DATA=[],SB=null,EDIT=false,USER=null;
-const SITE=location.origin+location.pathname;
-try{if(window.supabase&&!SUPABASE_URL.startsWith("__"))SB=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);}catch(e){}
+let DATA=[],EDIT=false,USER="",CODE="";
+const ls={get:k=>{try{return localStorage.getItem(k)||""}catch(e){return ""}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}},del:k=>{try{localStorage.removeItem(k)}catch(e){}}};
+async function rpc(fn,body){const r=await fetch(SUPABASE_URL+"/rest/v1/rpc/"+fn,{method:"POST",headers:{"apikey":SUPABASE_KEY,"Content-Type":"application/json"},body:JSON.stringify(body)});
+  const j=await r.json().catch(()=>null);if(!r.ok)throw new Error((j&&j.message)||("Erreur "+r.status));return j}
 function zonage(z){if(!z||!z.statut)return '<span class="chip">Zonage à vérifier</span>';
   const c={oui:"constructible",non:"non constructible",partiel:"partiellement constructible"}[z.constructible]||"zonage inconnu";
   return `<span class="chip">${esc(z.zone?z.zone+" · ":"")}${c} (${esc(z.statut)})</span>`}
@@ -96,35 +96,36 @@ function card(f){
 function editBlock(f){
   const opts=Object.entries(LIB).map(([k,v])=>`<option value="${k}"${k===f.statut?" selected":""}>${v}</option>`).join("");
   return `<div class="edit" data-id="${esc(f.id)}"><select class="e-st">${opts}</select>
-  <textarea class="e-note" placeholder="Note (visible des seuls éditeurs)">${esc(f.note||"")}</textarea>
+  <textarea class="e-note" placeholder="Note (visible de l'équipe)">${esc(f.note||"")}</textarea>
   <div><button class="e-save">Enregistrer</button> <span class="e-msg"></span>${f.par?`<span class="e-msg"> modifié par ${esc(f.par)}</span>`:""}</div></div>`}
 async function save(box){
   const id=box.dataset.id,statut=box.querySelector(".e-st").value,note=box.querySelector(".e-note").value,msg=box.querySelector(".e-msg");
   msg.className="e-msg";msg.textContent="Enregistrement…";
-  const {error}=await SB.from("statuts").upsert({id,statut,note});
-  if(error){msg.className="e-msg err";msg.textContent="Échec : "+error.message;return}
+  try{await rpc("maj_statut",{code:CODE,p_id:id,p_statut:statut,p_note:note,p_par:USER})}
+  catch(e){msg.className="e-msg err";msg.textContent="Échec : "+e.message;return}
   const f=DATA.find(x=>x.id===id);if(f){f.statut=statut;f.note=note;f.par=USER}
   msg.className="e-msg saved";msg.textContent="Enregistré";stats();
 }
 document.addEventListener("click",e=>{const b=e.target.closest(".e-save");if(b)save(b.closest(".edit"))});
-async function auth(){
-  const el=document.getElementById("auth");
-  if(!SB){el.textContent="";return}
-  const {data:{session}}=await SB.auth.getSession();
-  if(!session){
-    el.innerHTML='<span>Modifier les statuts :</span><input type="email" id="mail" placeholder="votre e-mail"><button id="go">Recevoir un lien de connexion</button><span id="amsg"></span>';
-    document.getElementById("go").onclick=async()=>{const m=document.getElementById("mail").value.trim();if(!m)return;
-      const {error}=await SB.auth.signInWithOtp({email:m,options:{emailRedirectTo:SITE}});
-      document.getElementById("amsg").textContent=error?"Erreur : "+error.message:"Lien envoyé, ouvrez votre boîte mail.";};
-    EDIT=false;return}
-  USER=session.user.email;
-  const {data:ed}=await SB.from("editeurs").select("email");
-  EDIT=!!(ed&&ed.length);
-  el.innerHTML=`<span>Connecté : ${esc(USER)}${EDIT?"":" (lecture seule : adresse non autorisée)"}</span><button class="ghost" id="out">Se déconnecter</button>`;
-  document.getElementById("out").onclick=async()=>{await SB.auth.signOut();location.reload()};
-  if(EDIT){const {data}=await SB.from("statuts").select("id,statut,note,par");
-    const m=new Map((data||[]).map(r=>[r.id,r]));DATA.forEach(f=>{const r=m.get(f.id);if(r){f.statut=r.statut;f.note=r.note;f.par=r.par}})}
+async function connect(code,nom){
+  const rows=await rpc("lire_statuts",{code});
+  if(!Array.isArray(rows))throw new Error("Code d'accès incorrect");
+  CODE=code;USER=nom;EDIT=true;ls.set("vf_code",code);ls.set("vf_nom",nom);
+  const m=new Map(rows.map(r=>[r.id,r]));DATA.forEach(f=>{const r=m.get(f.id);if(r){f.statut=r.statut;f.note=r.note;f.par=r.par}});
 }
+function authBar(err){
+  const el=document.getElementById("auth");
+  if(EDIT){el.innerHTML=`<span>Mode équipe : ${esc(USER)}</span><button class="ghost" id="out">Quitter</button>`;
+    document.getElementById("out").onclick=()=>{ls.del("vf_code");location.reload()};return}
+  el.innerHTML=`<span>Équipe :</span><input id="nom" placeholder="Votre prénom" value="${esc(ls.get("vf_nom"))}" style="min-width:140px"><input id="code" type="password" placeholder="Code d'accès" style="min-width:140px"><button id="go">Modifier les statuts</button><span id="amsg" class="err">${esc(err||"")}</span>`;
+  const go=async()=>{const nom=document.getElementById("nom").value.trim(),code=document.getElementById("code").value.trim();
+    if(!nom||!code){document.getElementById("amsg").textContent="Prénom et code requis";return}
+    document.getElementById("amsg").textContent="";ls.set("vf_nom",nom);
+    try{await connect(code,nom);authBar();stats();render()}catch(e){authBar(e.message)}};
+  document.getElementById("go").onclick=go;document.getElementById("code").onkeydown=e=>{if(e.key==="Enter")go()};
+}
+async function auth(){const c=ls.get("vf_code"),n=ls.get("vf_nom");
+  if(c&&n){try{await connect(c,n)}catch(e){ls.del("vf_code")}}authBar();}
 function stats(){const n=s=>DATA.filter(f=>f.statut===s).length;
   document.getElementById("stats").innerHTML=[["Fonciers suivis",DATA.length],["Nouveaux",n("nouveau")],["À étudier",n("a_etudier")],["Contactés",n("contacte")],["Retenus",n("retenu")]].map(([a,b])=>`<div class="stat"><b>${b}</b><span>${a}</span></div>`).join("")}
 function render(){
