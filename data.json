@@ -1,6 +1,76 @@
 {
- "maj": "2026-11-16T09:42",
+ "maj": "2026-11-23T17:15",
  "fonciers": [
+  {
+   "titre": "Maison 5 pièces 147 m² (exclusivité)",
+   "commune": "Bousbecque",
+   "insee": "59098",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": null,
+   "habitable": 147,
+   "prix": 585000,
+   "prixM2": null,
+   "historiquePrix": [
+    {
+     "date": "2026-11-23",
+     "prix": 585000
+    }
+   ],
+   "source": "Bien'ici (pro)",
+   "url": "https://www.bienici.com/annonce/ag060811-561192923",
+   "dateAnnonce": "2026-11-23",
+   "vuLe": "2026-11-23",
+   "score": 33,
+   "scoreCommune": 55.2,
+   "statut": "nouveau",
+   "pourquoi": "SRU 18,6 % pour 25 %, environ 127 LLS manquants, 142 demandes en attente. Surface du terrain non indiquée (alerte ≥ 2 000 m²), vendeur pro.",
+   "zonage": {
+    "statut": "introuvable",
+    "constructible": "inconnu"
+   },
+   "id": "bienici-ag060811-561192923",
+   "rang": 26,
+   "taux": 18.6,
+   "cible": 25,
+   "manque": 127,
+   "pm2Terrain": null
+  },
+  {
+   "titre": "Maison 11 pièces 249 m²",
+   "commune": "Quesnoy-Sur-Deûle",
+   "insee": "59482",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": null,
+   "habitable": 249,
+   "prix": 985000,
+   "prixM2": null,
+   "historiquePrix": [
+    {
+     "date": "2026-11-23",
+     "prix": 985000
+    }
+   ],
+   "source": "Bien'ici (pro)",
+   "url": "https://www.bienici.com/annonce/ag440414-521803379",
+   "dateAnnonce": "2026-11-23",
+   "vuLe": "2026-11-23",
+   "score": 20,
+   "scoreCommune": 32.8,
+   "statut": "nouveau",
+   "pourquoi": "SRU 22,4 % pour 25 %, environ 70 LLS manquants, 143 demandes en attente. Surface du terrain non indiquée (alerte ≥ 2 000 m²), vendeur pro.",
+   "zonage": {
+    "statut": "introuvable",
+    "constructible": "inconnu"
+   },
+   "id": "bienici-ag440414-521803379",
+   "rang": 62,
+   "taux": 22.4,
+   "cible": 25,
+   "manque": 70,
+   "pm2Terrain": 121
+  },
   {
    "titre": "Maison 11 pièces 309 m², terrain non précisé",
    "commune": "Quesnoy-Sur-Deûle",
@@ -35,6 +105,48 @@
    "cible": 25,
    "manque": 70,
    "pm2Terrain": 121
+  },
+  {
+   "titre": "Maison 250 m² sur terrain 14 600 m²",
+   "commune": "Beuvry",
+   "insee": "62126",
+   "dep": "62",
+   "type": "Maison + terrain",
+   "surface": 14600,
+   "habitable": 250,
+   "prix": 70375,
+   "prixM2": 5,
+   "historiquePrix": [
+    {
+     "date": "2026-11-18",
+     "prix": 70375
+    }
+   ],
+   "source": "Bien'ici (pro)",
+   "url": "https://www.bienici.com/annonce/ag757026-560685326",
+   "autresAnnonces": [
+    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjMsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFK0qwYeB5l49mUGqNOBSGogXOP9CU6IszP6KkFv_bikPP-RFbyTcFVvf4fnI3m1F7dVA7Ni-_GGYFvFryosLOXgcO1G5zcuhH97PV7vB7ym6_l"
+   ],
+   "dateAnnonce": "2026-11-18",
+   "vuLe": "2026-11-23",
+   "score": 42,
+   "scoreCommune": 36.6,
+   "statut": "nouveau",
+   "pourquoi": "SRU 21,2 % pour 20 %, environ 0 LLS manquants, 272 demandes en attente. 5 €/m² de terrain (réf. commune 123,8 €/m²), vendeur pro. Viager occupé : prix = bouquet, plus rente de 1 762 €/mois (terrain 14 600 m² selon SeLoger).",
+   "zonage": {
+    "statut": "probable",
+    "constructible": "oui",
+    "zone": "UC",
+    "zoneLong": "UC : Zone urbaine de moyenne densité",
+    "lat": 50.518121,
+    "lon": 2.675277
+   },
+   "id": "bienici-ag757026-560685326",
+   "rang": 53,
+   "taux": 21.2,
+   "cible": 20,
+   "manque": 0,
+   "pm2Terrain": 123.8
   },
   {
    "titre": "Maison 360 m², terrain non précisé (Deleu Immobilier)",
@@ -99,6 +211,41 @@
    "pm2Terrain": 64.7
   },
   {
+   "titre": "Maison 134 m²",
+   "commune": "Isbergues",
+   "insee": "62473",
+   "dep": "62",
+   "type": "Maison + terrain",
+   "surface": null,
+   "habitable": 134,
+   "prix": 158500,
+   "prixM2": null,
+   "historiquePrix": [
+    {
+     "date": "2026-11-17",
+     "prix": 158500
+    }
+   ],
+   "source": "Bien'ici (pro)",
+   "url": "https://www.bienici.com/annonce/citya-1-973-TMAI973-231130",
+   "dateAnnonce": "2026-11-17",
+   "vuLe": "2026-11-23",
+   "score": 34,
+   "scoreCommune": 56.5,
+   "statut": "nouveau",
+   "pourquoi": "SRU 17 % pour 20 %, environ 114 LLS manquants, 218 demandes en attente. Surface du terrain non indiquée (alerte ≥ 2 000 m²), vendeur pro.",
+   "zonage": {
+    "statut": "introuvable",
+    "constructible": "inconnu"
+   },
+   "id": "bienici-citya-1-973-TMAI973-231130",
+   "rang": 22,
+   "taux": 17,
+   "cible": 20,
+   "manque": 114,
+   "pm2Terrain": 28
+  },
+  {
    "titre": "Maison 5 pièces 132 m²",
    "commune": "Isbergues",
    "insee": "62473",
@@ -154,7 +301,8 @@
    "autresAnnonces": [
     "https://www.bienici.com/annonce/entities-1039527-3849822",
     "https://www.bienici.com/annonce/entities-1039527-3849823",
-    "https://www.leboncoin.fr/vi/3301928126.htm"
+    "https://www.leboncoin.fr/vi/3301928126.htm",
+    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjgsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFTcc5UJvD8swH3xpDrm30CExc-R9id9KJDy6wvbQa4qbWFnaNjjHM17x1V_oMEDuDRtFS_JJXGPkFm8jibwZ3wwHE3DY-llN_0XtLxJmNazJo"
    ],
    "dateAnnonce": "2026-11-02",
    "vuLe": "2026-11-02",
@@ -229,7 +377,8 @@
    "source": "Bien'ici (pro)",
    "url": "https://www.bienici.com/annonce/entities-1039527-3879422",
    "autresAnnonces": [
-    "https://www.bienici.com/annonce/entities-1039527-3879442"
+    "https://www.bienici.com/annonce/entities-1039527-3879442",
+    "https://www.bienici.com/annonce/entities-1039527-3879441"
    ],
    "dateAnnonce": "2026-10-31",
    "vuLe": "2026-11-02",
@@ -408,6 +557,41 @@
    "pm2Terrain": 228.2
   },
   {
+   "titre": "Maison 180 m²",
+   "commune": "Billy-Berclau",
+   "insee": "62132",
+   "dep": "62",
+   "type": "Maison + terrain",
+   "surface": null,
+   "habitable": 180,
+   "prix": 440000,
+   "prixM2": null,
+   "historiquePrix": [
+    {
+     "date": "2026-11-16",
+     "prix": 440000
+    }
+   ],
+   "source": "Bien'ici (pro)",
+   "url": "https://www.bienici.com/annonce/iad-france-2157214",
+   "dateAnnonce": "2026-11-16",
+   "vuLe": "2026-11-23",
+   "score": 28,
+   "scoreCommune": 46.2,
+   "statut": "nouveau",
+   "pourquoi": "SRU 17,1 % pour 20 %, environ 59 LLS manquants, 244 demandes en attente. Surface du terrain non indiquée (alerte ≥ 2 000 m²), vendeur pro.",
+   "zonage": {
+    "statut": "introuvable",
+    "constructible": "inconnu"
+   },
+   "id": "bienici-iad-france-2157214",
+   "rang": 35,
+   "taux": 17.1,
+   "cible": 20,
+   "manque": 59,
+   "pm2Terrain": 181.7
+  },
+  {
    "titre": "Maison 8 pièces 188 m²",
    "commune": "Bondues",
    "insee": "59090",
@@ -425,6 +609,10 @@
    ],
    "source": "Bien'ici (pro)",
    "url": "https://www.bienici.com/annonce/netty-reference-house-1120",
+   "autresAnnonces": [
+    "https://www.leboncoin.fr/vi/3210763909.htm",
+    "https://www.leboncoin.fr/vi/3205623337.htm"
+   ],
    "dateAnnonce": "2026-11-03",
    "vuLe": "2026-11-09",
    "score": 37,
@@ -464,7 +652,7 @@
    "vuLe": "2026-11-16",
    "score": 22,
    "scoreCommune": 36.6,
-   "statut": "nouveau",
+   "statut": "contacte",
    "pourquoi": "SRU 21,2 % pour 20 %, environ 0 LLS manquants, 272 demandes en attente. Surface du terrain non précisée (alerte ≥ 2 000 m²), vendeur pro.",
    "zonage": {
     "statut": "introuvable",
@@ -476,6 +664,76 @@
    "cible": 20,
    "manque": 0,
    "pm2Terrain": 123.8
+  },
+  {
+   "titre": "Maison 210 m² sur terrain 2 077 m²",
+   "commune": "Vimy",
+   "insee": "62861",
+   "dep": "62",
+   "type": "Maison + terrain",
+   "surface": 2077,
+   "habitable": 210,
+   "prix": 368000,
+   "prixM2": 177,
+   "historiquePrix": [
+    {
+     "date": "2026-11-19",
+     "prix": 368000
+    }
+   ],
+   "source": "Leboncoin (pro)",
+   "url": "https://www.leboncoin.fr/vi/3078926037.htm",
+   "dateAnnonce": "2026-11-19",
+   "vuLe": "2026-11-23",
+   "score": 43,
+   "scoreCommune": 37.9,
+   "statut": "nouveau",
+   "pourquoi": "SRU 17,1 % pour 20 %, environ 53 LLS manquants, 101 demandes en attente. 177 €/m² de terrain (réf. commune 89,1 €/m²), vendeur pro. Même surface de terrain que lbc-3173316003 (329 000 €), peut-être le même bien à un autre prix.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "inconnu"
+   },
+   "id": "lbc-3078926037",
+   "rang": 49,
+   "taux": 17.1,
+   "cible": 20,
+   "manque": 53,
+   "pm2Terrain": 89.1
+  },
+  {
+   "titre": "Maison 328 m² sur terrain 8 015 m²",
+   "commune": "Steenvoorde",
+   "insee": "59580",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 8015,
+   "habitable": 328,
+   "prix": 590000,
+   "prixM2": 74,
+   "historiquePrix": [
+    {
+     "date": "2026-11-22",
+     "prix": 590000
+    }
+   ],
+   "source": "Leboncoin (pro)",
+   "url": "https://www.leboncoin.fr/vi/3114579613.htm",
+   "dateAnnonce": "2026-11-22",
+   "vuLe": "2026-11-23",
+   "score": 81,
+   "scoreCommune": 68.6,
+   "statut": "nouveau",
+   "pourquoi": "SRU 9,8 % pour 20 %, environ 183 LLS manquants, 146 demandes en attente. 74 €/m² de terrain (réf. commune 42 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "introuvable",
+    "constructible": "inconnu"
+   },
+   "id": "lbc-3114579613",
+   "rang": 5,
+   "taux": 9.8,
+   "cible": 20,
+   "manque": 183,
+   "pm2Terrain": 42
   },
   {
    "titre": "Terrain 5 300 m²",
@@ -495,6 +753,9 @@
    ],
    "source": "Leboncoin (pro)",
    "url": "https://www.leboncoin.fr/vi/3132222902.htm",
+   "autresAnnonces": [
+    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjcsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFTUQZc_fRowevVkiC52WBKUaIzn-PxTUN6YgV0oTckR-OUcz2xx7vRVngcfnQ16-TBfo1lX_YtzITt-VU0tCjk2gfWDUvgOhVD1hB2v2lSXFyM"
+   ],
    "dateAnnonce": "2026-10-29",
    "vuLe": "2026-11-02",
    "score": 0,
@@ -525,7 +786,7 @@
    "vuLe": "2026-11-16",
    "score": 32,
    "scoreCommune": 25.6,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 18 % pour 20 %, environ 40 LLS manquants, 98 demandes en attente. 213 €/m² de terrain (réf. commune 228,2 €/m²), vendeur pro.",
    "zonage": {
     "statut": "probable",
@@ -602,7 +863,7 @@
    "vuLe": "2026-11-16",
    "score": 48,
    "scoreCommune": 37.1,
-   "statut": "nouveau",
+   "statut": "contacte",
    "pourquoi": "SRU 22,4 % pour 20 %, environ 0 LLS manquants, 160 demandes en attente. 117 €/m² de terrain (réf. commune None €/m²), vendeur pro.",
    "zonage": {
     "statut": "probable",
@@ -641,7 +902,7 @@
    "vuLe": "2026-11-16",
    "score": 13,
    "scoreCommune": 18.9,
-   "statut": "nouveau",
+   "statut": "contacte",
    "pourquoi": "Zone A/N probable (Ner). SRU 22,2 % pour 20 %, environ 0 LLS manquants, 146 demandes en attente. 38 €/m² de terrain (réf. commune 354,5 €/m²), vendeur pro.",
    "zonage": {
     "statut": "probable",
@@ -680,7 +941,7 @@
    "vuLe": "2026-11-16",
    "score": 43,
    "scoreCommune": 37.9,
-   "statut": "nouveau",
+   "statut": "contacte",
    "pourquoi": "SRU 17,1 % pour 20 %, environ 53 LLS manquants, 101 demandes en attente. 158 €/m² de terrain (réf. commune 89,1 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -692,6 +953,44 @@
    "cible": 20,
    "manque": 53,
    "pm2Terrain": 89.1
+  },
+  {
+   "titre": "Maison 327 m² sur terrain 8 000 m²",
+   "commune": "Steenvoorde",
+   "insee": "59580",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 8000,
+   "habitable": 327,
+   "prix": 641600,
+   "prixM2": 80,
+   "historiquePrix": [
+    {
+     "date": "2026-11-20",
+     "prix": 641600
+    }
+   ],
+   "source": "Leboncoin (pro)",
+   "url": "https://www.leboncoin.fr/vi/3176939500.htm",
+   "autresAnnonces": [
+    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjksInQiOjYwMzAsInMiOjUxfQAzAAAAAAFWI2IHGFT6FbMxNuda8Fxjp0C1LBOhaRT3saKk3q4oivpcIzay9aF6zM_GLzH4KZW5uGRneY8hsasW51ZLVNacSL9QKCh1nJaemTNPwq5fHCQl"
+   ],
+   "dateAnnonce": "2026-11-20",
+   "vuLe": "2026-11-23",
+   "score": 81,
+   "scoreCommune": 68.6,
+   "statut": "nouveau",
+   "pourquoi": "SRU 9,8 % pour 20 %, environ 183 LLS manquants, 146 demandes en attente. 80 €/m² de terrain (réf. commune 42 €/m²), vendeur pro. Proche de lbc-3114579613 (8 015 m², 590 000 €), peut-être le même bien.",
+   "zonage": {
+    "statut": "introuvable",
+    "constructible": "inconnu"
+   },
+   "id": "lbc-3176939500",
+   "rang": 5,
+   "taux": 9.8,
+   "cible": 20,
+   "manque": 183,
+   "pm2Terrain": 42
   },
   {
    "titre": "Maison 6 pièces 140 m² sur 5 335 m²",
@@ -746,6 +1045,9 @@
    ],
    "source": "Leboncoin (pro)",
    "url": "https://www.leboncoin.fr/vi/3203383968.htm",
+   "autresAnnonces": [
+    "https://www.leboncoin.fr/vi/3276280818.htm"
+   ],
    "dateAnnonce": "2026-11-07",
    "vuLe": "2026-11-09",
    "score": 29,
@@ -788,7 +1090,7 @@
    "vuLe": "2026-11-16",
    "score": 68,
    "scoreCommune": 59.7,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU None % pour 20 %, environ None LLS manquants, 369 demandes en attente. 68 €/m² de terrain (réf. commune 64,7 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -819,11 +1121,14 @@
    ],
    "source": "Leboncoin (pro)",
    "url": "https://www.leboncoin.fr/vi/3206929810.htm",
+   "autresAnnonces": [
+    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjcsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFSYEgV92xHNcnEhBh_nAz_TIYkg1W2tWZCWC3pHu1nmunOqmxt2g3Gr935c8n5s32n3cMWaTYzvJ6C0gBmkVkFC40m5fDrSG40nj57SS1FFw"
+   ],
    "dateAnnonce": "2026-11-13",
    "vuLe": "2026-11-16",
    "score": 58,
    "scoreCommune": 47,
-   "statut": "nouveau",
+   "statut": "contacte",
    "pourquoi": "SRU 20,2 % pour 25 %, environ 102 LLS manquants, 173 demandes en attente. 114 €/m² de terrain (réf. commune 226,3 €/m²), vendeur pro.",
    "zonage": {
     "statut": "introuvable",
@@ -835,6 +1140,41 @@
    "cible": 25,
    "manque": 102,
    "pm2Terrain": 226.3
+  },
+  {
+   "titre": "Terrain 3 062 m²",
+   "commune": "Cormontreuil",
+   "insee": "51172",
+   "dep": "51",
+   "type": "Terrain",
+   "surface": 3062,
+   "habitable": null,
+   "prix": 275000,
+   "prixM2": 90,
+   "historiquePrix": [
+    {
+     "date": "2026-11-18",
+     "prix": 275000
+    }
+   ],
+   "source": "Leboncoin (pro)",
+   "url": "https://www.leboncoin.fr/vi/3209876423.htm",
+   "dateAnnonce": "2026-11-18",
+   "vuLe": "2026-11-23",
+   "score": 66,
+   "scoreCommune": 49,
+   "statut": "nouveau",
+   "pourquoi": "SRU 21 % pour 20 %, environ 0 LLS manquants, None demandes en attente. 90 €/m² de terrain (réf. commune 29,4 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "inconnu"
+   },
+   "id": "lbc-3209876423",
+   "rang": 82,
+   "taux": 21,
+   "cible": 20,
+   "manque": 0,
+   "pm2Terrain": 29.4
   },
   {
    "titre": "Terrain 3 500 m² (prix affiché 325 €)",
@@ -874,6 +1214,45 @@
    "cible": 20,
    "manque": 0,
    "pm2Terrain": 130.5
+  },
+  {
+   "titre": "Maison 302 m² sur terrain 4 700 m²",
+   "commune": "Wavrin",
+   "insee": "59653",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 4700,
+   "habitable": 302,
+   "prix": 695000,
+   "prixM2": 148,
+   "historiquePrix": [
+    {
+     "date": "2026-11-23",
+     "prix": 695000
+    }
+   ],
+   "source": "Leboncoin (pro)",
+   "url": "https://www.leboncoin.fr/vi/3212711389.htm",
+   "dateAnnonce": "2026-11-23",
+   "vuLe": "2026-11-23",
+   "score": 59,
+   "scoreCommune": 47.9,
+   "statut": "nouveau",
+   "pourquoi": "SRU 21,4 % pour 25 %, environ 117 LLS manquants, 284 demandes en attente. 148 €/m² de terrain (réf. commune 195,7 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "probable",
+    "constructible": "oui",
+    "zone": "UGE6.1",
+    "zoneLong": "Gardiennes de l'eau - Tissu résidentiel pavillonnaire",
+    "lat": 50.566037,
+    "lon": 2.920543
+   },
+   "id": "lbc-3212711389",
+   "rang": 32,
+   "taux": 21.4,
+   "cible": 25,
+   "manque": 117,
+   "pm2Terrain": 195.7
   },
   {
    "titre": "Maison 10 pièces 270 m² sur 2 742 m²",
@@ -924,11 +1303,14 @@
    ],
    "source": "Leboncoin (pro)",
    "url": "https://www.leboncoin.fr/vi/3229477319.htm",
+   "autresAnnonces": [
+    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjQsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFLu8LabyT-Ok_FsDmRINvnGg5cQw4ixK1jSEJ_NjGBgcinhc3brc1ZfDfiHnmtKQPERsQM4ckSyLh2Hf0zUkplKdNcW-bv1dZz8phrCkJFa5o"
+   ],
    "dateAnnonce": "2026-10-29",
    "vuLe": "2026-11-02",
    "score": 28,
    "scoreCommune": 25.6,
-   "statut": "a_etudier",
+   "statut": "ecarte",
    "pourquoi": "SRU 18 % pour 20 %, environ 40 LLS manquants, 98 demandes en attente. 231 €/m² de terrain (réf. commune 228 €/m²), vendeur pro.",
    "zonage": {
     "statut": "probable",
@@ -967,7 +1349,7 @@
    "vuLe": "2026-11-16",
    "score": 59,
    "scoreCommune": 47.3,
-   "statut": "nouveau",
+   "statut": "contacte",
    "pourquoi": "SRU 16,4 % pour 20 %, environ 65 LLS manquants, 74 demandes en attente. 59 €/m² de terrain (réf. commune 52,4 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -1320,7 +1702,7 @@
    "vuLe": "2026-11-16",
    "score": 66,
    "scoreCommune": 44.2,
-   "statut": "nouveau",
+   "statut": "contacte",
    "pourquoi": "SRU 21 % pour 20 %, environ 0 LLS manquants, 274 demandes en attente. 84 €/m² de terrain (réf. commune 130,5 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -1381,7 +1763,7 @@
    "vuLe": "2026-11-16",
    "score": 25,
    "scoreCommune": 37.5,
-   "statut": "nouveau",
+   "statut": "contacte",
    "pourquoi": "Zone A/N probable (A). SRU 22,2 % pour 20 %, environ 0 LLS manquants, 583 demandes en attente. 92 €/m² de terrain (réf. commune 196,7 €/m²), vendeur pro.",
    "zonage": {
     "statut": "probable",
@@ -1406,22 +1788,29 @@
    "type": "Maison + terrain",
    "surface": 6794,
    "habitable": 292,
-   "prix": 475940,
-   "prixM2": 70,
+   "prix": 469000,
+   "prixM2": 69,
    "historiquePrix": [
     {
      "date": "2026-11-13",
      "prix": 475940
+    },
+    {
+     "date": "2026-11-20",
+     "prix": 469000
     }
    ],
    "source": "Leboncoin (pro)",
    "url": "https://www.leboncoin.fr/vi/3271546794.htm",
+   "autresAnnonces": [
+    "https://www.leboncoin.fr/vi/3275990691.htm"
+   ],
    "dateAnnonce": "2026-11-13",
    "vuLe": "2026-11-16",
    "score": 37,
    "scoreCommune": 44.2,
-   "statut": "nouveau",
-   "pourquoi": "Zone A/N probable (Ast). SRU 21 % pour 20 %, environ 0 LLS manquants, 274 demandes en attente. 70 €/m² de terrain (réf. commune 130,5 €/m²), vendeur pro.",
+   "statut": "ecarte",
+   "pourquoi": "Zone A/N probable (Ast). SRU 21 % pour 20 %, environ 0 LLS manquants, 274 demandes en attente. 70 €/m² de terrain (réf. commune 130,5 €/m²), vendeur pro. Prix passé de 475 940 à 469 000 € le 20/11.",
    "zonage": {
     "statut": "probable",
     "constructible": "non",
@@ -1455,6 +1844,9 @@
    ],
    "source": "Leboncoin (pro)",
    "url": "https://www.leboncoin.fr/vi/3272099567.htm",
+   "autresAnnonces": [
+    "https://www.bienici.com/annonce/immonot-0000013010_59157-2550"
+   ],
    "dateAnnonce": "2026-11-14",
    "vuLe": "2026-11-16",
    "score": 60,
@@ -1529,11 +1921,16 @@
    ],
    "source": "Leboncoin (pro)",
    "url": "https://www.leboncoin.fr/vi/3272243528.htm",
+   "autresAnnonces": [
+    "https://www.leboncoin.fr/vi/3311867926.htm",
+    "https://www.leboncoin.fr/vi/3311535864.htm",
+    "https://www.bienici.com/annonce/century-21-202_3833_1039"
+   ],
    "dateAnnonce": "2026-11-14",
    "vuLe": "2026-11-16",
    "score": 45,
    "scoreCommune": 55.4,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 12,5 % pour 25 %, environ 286 LLS manquants, 156 demandes en attente. 522 €/m² de terrain (réf. commune 229,5 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -1584,6 +1981,155 @@
    "cible": 25,
    "manque": 875,
    "pm2Terrain": 403.8
+  },
+  {
+   "titre": "Maison 100 m² sur terrain 2 595 m²",
+   "commune": "Verneuil-En-Halatte",
+   "insee": "60670",
+   "dep": "60",
+   "type": "Maison + terrain",
+   "surface": 2595,
+   "habitable": 100,
+   "prix": 165000,
+   "prixM2": 64,
+   "historiquePrix": [
+    {
+     "date": "2026-11-19",
+     "prix": 165000
+    }
+   ],
+   "source": "Leboncoin (pro)",
+   "url": "https://www.leboncoin.fr/vi/3275205217.htm",
+   "dateAnnonce": "2026-11-19",
+   "vuLe": "2026-11-23",
+   "score": 58,
+   "scoreCommune": 41.1,
+   "statut": "nouveau",
+   "pourquoi": "SRU 17,6 % pour 20 %, environ 47 LLS manquants, 171 demandes en attente. 64 €/m² de terrain (pas de référence communale), vendeur pro.",
+   "zonage": {
+    "statut": "introuvable",
+    "constructible": "inconnu"
+   },
+   "id": "lbc-3275205217",
+   "rang": 44,
+   "taux": 17.6,
+   "cible": 20,
+   "manque": 47,
+   "pm2Terrain": null
+  },
+  {
+   "titre": "Terrain 2 860 m²",
+   "commune": "Vitry-En-Artois",
+   "insee": "62865",
+   "dep": "62",
+   "type": "Terrain",
+   "surface": 2860,
+   "habitable": null,
+   "prix": 126600,
+   "prixM2": 44,
+   "historiquePrix": [
+    {
+     "date": "2026-11-19",
+     "prix": 126600
+    }
+   ],
+   "source": "Leboncoin (pro)",
+   "url": "https://www.leboncoin.fr/vi/3275493686.htm",
+   "autresAnnonces": [
+    "https://www.leboncoin.fr/vi/3312926188.htm",
+    "https://www.bienici.com/annonce/netty-byzance2-land-539",
+    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjYsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFRudGMtcw78J5sS242XPP9f8V6ZzxAVr5RQTdp4ej22hvLMcpzOagppiZ7528ZYP4nBWPHeIZm1LLZxE5IhKzlm1pjcbOF6NjjbAZM48A8xlM"
+   ],
+   "dateAnnonce": "2026-11-19",
+   "vuLe": "2026-11-23",
+   "score": 65,
+   "scoreCommune": 50.5,
+   "statut": "nouveau",
+   "pourquoi": "SRU 18,8 % pour 20 %, environ 24 LLS manquants, 134 demandes en attente. 44 €/m² de terrain (réf. commune 9 €/m²), vendeur pro. Aussi annoncé à 129 000 € (autre annonce Leboncoin, Bien'ici, SeLoger).",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "inconnu"
+   },
+   "id": "lbc-3275493686",
+   "rang": 31,
+   "taux": 18.8,
+   "cible": 20,
+   "manque": 24,
+   "pm2Terrain": 9
+  },
+  {
+   "titre": "Maison 196 m² sur terrain 5 152 m²",
+   "commune": "Quesnoy-Sur-Deûle",
+   "insee": "59482",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 5152,
+   "habitable": 196,
+   "prix": 649000,
+   "prixM2": 126,
+   "historiquePrix": [
+    {
+     "date": "2026-11-19",
+     "prix": 649000
+    }
+   ],
+   "source": "Leboncoin (pro)",
+   "url": "https://www.leboncoin.fr/vi/3275573861.htm",
+   "dateAnnonce": "2026-11-19",
+   "vuLe": "2026-11-23",
+   "score": 20,
+   "scoreCommune": 32.8,
+   "statut": "nouveau",
+   "pourquoi": "Zone A/N probable. SRU 22,4 % pour 25 %, environ 70 LLS manquants, 143 demandes en attente. 126 €/m² de terrain (réf. commune 121 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "probable",
+    "constructible": "non",
+    "zone": "NE",
+    "zoneLong": "Zone naturelle écologique",
+    "lat": 50.723656,
+    "lon": 3.031208
+   },
+   "id": "lbc-3275573861",
+   "rang": 62,
+   "taux": 22.4,
+   "cible": 25,
+   "manque": 70,
+   "pm2Terrain": 121
+  },
+  {
+   "titre": "Maison 130 m² sur terrain 2 834 m²",
+   "commune": "Halluin",
+   "insee": "59279",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 2834,
+   "habitable": 130,
+   "prix": 595000,
+   "prixM2": 210,
+   "historiquePrix": [
+    {
+     "date": "2026-11-20",
+     "prix": 595000
+    }
+   ],
+   "source": "Leboncoin (pro)",
+   "url": "https://www.leboncoin.fr/vi/3276016398.htm",
+   "dateAnnonce": "2026-11-20",
+   "vuLe": "2026-11-23",
+   "score": 40,
+   "scoreCommune": 41.8,
+   "statut": "nouveau",
+   "pourquoi": "SRU 27,5 % pour 25 %, environ 0 LLS manquants, 998 demandes en attente. 210 €/m² de terrain (réf. commune 234,7 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "inconnu"
+   },
+   "id": "lbc-3276016398",
+   "rang": 43,
+   "taux": 27.5,
+   "cible": 25,
+   "manque": 0,
+   "pm2Terrain": 234.7
   },
   {
    "titre": "Maison plain-pied 5 pièces 110 m² sur 2 000 m²",
@@ -1705,6 +2251,9 @@
    ],
    "source": "Leboncoin (pro)",
    "url": "https://www.leboncoin.fr/vi/3297224221.htm",
+   "autresAnnonces": [
+    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjgsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFUy1balkEJX1xPVAsypsDDHgSvx9NTzRvSgiaJfHoPOEsxgc3QSUtQ1X5TCL324J-klFLlNnkfPaD2DfFwUbwY8gRBSKhPFIsKGeLZTM4Xhw"
+   ],
    "dateAnnonce": "2026-10-29",
    "vuLe": "2026-11-02",
    "score": 72,
@@ -1802,7 +2351,7 @@
    "vuLe": "2026-11-02",
    "score": 64,
    "scoreCommune": 56.5,
-   "statut": "a_etudier",
+   "statut": "ecarte",
    "pourquoi": "SRU 17 % pour 20 %, environ 114 LLS manquants, 218 demandes en attente. 76 €/m² de terrain (réf. commune 28 €/m²), vendeur pro.",
    "zonage": {
     "statut": "probable",
@@ -1874,7 +2423,8 @@
    "url": "https://www.leboncoin.fr/vi/3298718737.htm",
    "autresAnnonces": [
     "https://www.bienici.com/annonce/entities-1039562-3897572",
-    "https://www.bienici.com/annonce/entities-1039562-3897588"
+    "https://www.bienici.com/annonce/entities-1039562-3897588",
+    "https://www.bienici.com/annonce/entities-1039562-3897589"
    ],
    "dateAnnonce": "2026-10-29",
    "vuLe": "2026-11-02",
@@ -1941,7 +2491,9 @@
    "autresAnnonces": [
     "https://www.leboncoin.fr/vi/3301551801.htm",
     "https://www.leboncoin.fr/vi/3306835982.htm",
-    "https://www.leboncoin.fr/vi/3309086914.htm"
+    "https://www.leboncoin.fr/vi/3309086914.htm",
+    "https://www.leboncoin.fr/vi/3314560016.htm",
+    "https://www.leboncoin.fr/vi/3312511799.htm"
    ],
    "dateAnnonce": "2026-11-01",
    "vuLe": "2026-11-02",
@@ -2080,7 +2632,8 @@
    "source": "Leboncoin (particulier)",
    "url": "https://www.leboncoin.fr/vi/3300466129.htm",
    "autresAnnonces": [
-    "https://www.leboncoin.fr/vi/3305857403.htm"
+    "https://www.leboncoin.fr/vi/3305857403.htm",
+    "https://www.leboncoin.fr/vi/3313022125.htm"
    ],
    "dateAnnonce": "2026-11-02",
    "vuLe": "2026-11-02",
@@ -2379,6 +2932,9 @@
    ],
    "source": "Leboncoin (pro)",
    "url": "https://www.leboncoin.fr/vi/3302995765.htm",
+   "autresAnnonces": [
+    "https://www.leboncoin.fr/vi/3130494030.htm"
+   ],
    "dateAnnonce": "2026-11-06",
    "vuLe": "2026-11-09",
    "score": 55,
@@ -2597,7 +3153,7 @@
    "vuLe": "2026-11-09",
    "score": 74,
    "scoreCommune": 57.2,
-   "statut": "contacte",
+   "statut": "ecarte",
    "pourquoi": "SRU 11,6 % pour 20 %, environ 173 LLS manquants, 100 demandes en attente. 91 €/m² de terrain (réf. commune 53 €/m²), vendeur particulier.",
    "zonage": {
     "statut": "incertain",
@@ -2702,7 +3258,7 @@
    "vuLe": "2026-11-16",
    "score": 53,
    "scoreCommune": 59.7,
-   "statut": "nouveau",
+   "statut": "contacte",
    "pourquoi": "SRU 21,1 % pour 25 %, environ 229 LLS manquants, 791 demandes en attente. 227 €/m² de terrain (réf. commune 329,3 €/m²), vendeur particulier.",
    "zonage": {
     "statut": "incertain",
@@ -2850,7 +3406,7 @@
    "vuLe": "2026-11-16",
    "score": 64,
    "scoreCommune": 56.5,
-   "statut": "nouveau",
+   "statut": "contacte",
    "pourquoi": "SRU 17 % pour 20 %, environ 114 LLS manquants, 218 demandes en attente. 82 €/m² de terrain (réf. commune 28 €/m²), vendeur pro.",
    "zonage": {
     "statut": "probable",
@@ -2889,7 +3445,7 @@
    "vuLe": "2026-11-16",
    "score": 30,
    "scoreCommune": 32.8,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "Zone A/N probable (NE). SRU 22,4 % pour 25 %, environ 70 LLS manquants, 143 demandes en attente. 87 €/m² de terrain (réf. commune 121 €/m²), vendeur pro.",
    "zonage": {
     "statut": "probable",
@@ -2924,11 +3480,14 @@
    ],
    "source": "Leboncoin (pro)",
    "url": "https://www.leboncoin.fr/vi/3306332525.htm",
+   "autresAnnonces": [
+    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjQsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFL0zwZ38PPHc-2gzKTWW8FuPGtK6e7TuVFJgw4-3BoVtY_jUsFwJpZX-qP6NixeeyKHNcMuCSmgRmmVANgO54ly20AaLR3yB8ffqKeseXMcg"
+   ],
    "dateAnnonce": "2026-11-11",
    "vuLe": "2026-11-16",
    "score": 70,
    "scoreCommune": 68.6,
-   "statut": "nouveau",
+   "statut": "a_etudier",
    "pourquoi": "SRU 9,8 % pour 20 %, environ 183 LLS manquants, 146 demandes en attente. 101 €/m² de terrain (réf. commune 42 €/m²), vendeur pro.",
    "zonage": {
     "statut": "introuvable",
@@ -2963,7 +3522,7 @@
    "vuLe": "2026-11-16",
    "score": 59,
    "scoreCommune": 36.6,
-   "statut": "nouveau",
+   "statut": "retenu",
    "pourquoi": "SRU 21,2 % pour 20 %, environ 0 LLS manquants, 272 demandes en attente. 98 €/m² de terrain (réf. commune 123,8 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -2998,7 +3557,7 @@
    "vuLe": "2026-11-16",
    "score": 67,
    "scoreCommune": 58.8,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 12,1 % pour 20 %, environ 190 LLS manquants, 134 demandes en attente. 71 €/m² de terrain (réf. commune 130,7 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -3038,7 +3597,7 @@
    "vuLe": "2026-11-16",
    "score": 58,
    "scoreCommune": 47.3,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 16,4 % pour 20 %, environ 65 LLS manquants, 74 demandes en attente. 63 €/m² de terrain (réf. commune 52,4 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -3108,7 +3667,7 @@
    "vuLe": "2026-11-16",
    "score": 66,
    "scoreCommune": 59.7,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 21,1 % pour 25 %, environ 229 LLS manquants, 791 demandes en attente. 158 €/m² de terrain (réf. commune 329,3 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -3146,7 +3705,7 @@
    "vuLe": "2026-11-16",
    "score": 50,
    "scoreCommune": 32.8,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 22,4 % pour 25 %, environ 70 LLS manquants, 143 demandes en attente. 180 €/m² de terrain (réf. commune 121 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -3178,13 +3737,19 @@
    "source": "Leboncoin (pro)",
    "url": "https://www.leboncoin.fr/vi/3308752866.htm",
    "autresAnnonces": [
-    "https://www.bienici.com/annonce/safti-1-1741434"
+    "https://www.bienici.com/annonce/safti-1-1741434",
+    "https://www.bienici.com/annonce/entities-1039562-3963037",
+    "https://www.bienici.com/annonce/entities-1039562-3963041",
+    "https://www.bienici.com/annonce/entities-1039562-3963042",
+    "https://www.leboncoin.fr/vi/3315993532.htm",
+    "https://www.leboncoin.fr/vi/3314884193.htm",
+    "https://www.leboncoin.fr/vi/3313931686.htm"
    ],
    "dateAnnonce": "2026-11-14",
    "vuLe": "2026-11-16",
    "score": 67,
    "scoreCommune": 58.8,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 12,1 % pour 20 %, environ 190 LLS manquants, 134 demandes en attente. 44 €/m² de terrain (réf. commune 130,7 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -3219,7 +3784,7 @@
    "vuLe": "2026-11-16",
    "score": 62,
    "scoreCommune": 37.5,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 22,2 % pour 20 %, environ 0 LLS manquants, 583 demandes en attente. 65 €/m² de terrain (réf. commune 196,7 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -3231,6 +3796,439 @@
    "cible": 20,
    "manque": 0,
    "pm2Terrain": 196.7
+  },
+  {
+   "titre": "Maison 163 m² sur terrain 2 500 m²",
+   "commune": "Billy-Berclau",
+   "insee": "62132",
+   "dep": "62",
+   "type": "Maison + terrain",
+   "surface": 2500,
+   "habitable": 163,
+   "prix": 390000,
+   "prixM2": 156,
+   "historiquePrix": [
+    {
+     "date": "2026-11-18",
+     "prix": 390000
+    }
+   ],
+   "source": "Leboncoin (particulier)",
+   "url": "https://www.leboncoin.fr/vi/3311771855.htm",
+   "autresAnnonces": [
+    "https://www.leboncoin.fr/vi/3312360434.htm"
+   ],
+   "dateAnnonce": "2026-11-18",
+   "vuLe": "2026-11-23",
+   "score": 51,
+   "scoreCommune": 46.2,
+   "statut": "nouveau",
+   "pourquoi": "SRU 17,1 % pour 20 %, environ 59 LLS manquants, 244 demandes en attente. 156 €/m² de terrain (réf. commune 181,7 €/m²), particulier.",
+   "zonage": {
+    "statut": "probable",
+    "constructible": "oui",
+    "zone": "UC",
+    "zoneLong": "UC : Zone urbaine mixte de faible densité, destinée à recevoir des habitations, des activités non nuisantes, des bureaux, des services et des équipements publics",
+    "lat": 50.510073,
+    "lon": 2.859257
+   },
+   "id": "lbc-3311771855",
+   "rang": 35,
+   "taux": 17.1,
+   "cible": 20,
+   "manque": 59,
+   "pm2Terrain": 181.7
+  },
+  {
+   "titre": "Maison sur terrain 2 700 m²",
+   "commune": "Merville",
+   "insee": "59400",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 2700,
+   "habitable": null,
+   "prix": 300000,
+   "prixM2": 111,
+   "historiquePrix": [
+    {
+     "date": "2026-11-20",
+     "prix": 300000
+    }
+   ],
+   "source": "Leboncoin (particulier)",
+   "url": "https://www.leboncoin.fr/vi/3312508037.htm",
+   "dateAnnonce": "2026-11-20",
+   "vuLe": "2026-11-23",
+   "score": 51,
+   "scoreCommune": 44.2,
+   "statut": "nouveau",
+   "pourquoi": "SRU 21 % pour 20 %, environ 0 LLS manquants, 274 demandes en attente. 111 €/m² de terrain (réf. commune 130,5 €/m²), particulier. L'annonce indique 3 740 m² habitables, sans doute une erreur de saisie.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "non"
+   },
+   "id": "lbc-3312508037",
+   "rang": 40,
+   "taux": 21,
+   "cible": 20,
+   "manque": 0,
+   "pm2Terrain": 130.5
+  },
+  {
+   "titre": "Maison 173 m² sur terrain 2 010 m²",
+   "commune": "Neufchâtel-Hardelot",
+   "insee": "62604",
+   "dep": "62",
+   "type": "Maison + terrain",
+   "surface": 2010,
+   "habitable": 173,
+   "prix": 830000,
+   "prixM2": 413,
+   "historiquePrix": [
+    {
+     "date": "2026-11-20",
+     "prix": 830000
+    }
+   ],
+   "source": "Leboncoin (pro)",
+   "url": "https://www.leboncoin.fr/vi/3312518443.htm",
+   "autresAnnonces": [
+    "https://www.bienici.com/annonce/ag440414-561080054",
+    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjUsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFOrosVNuVTY5-KUtA0V7Js8zVPe76eyDkjRu_NZxvL30Gnrf6jjHLFAnmcmPCpE8v_9IHxzIA-wfXgaFFNyidc-k1s1f7b3Vgo3uC_Y3CHbzX3"
+   ],
+   "dateAnnonce": "2026-11-20",
+   "vuLe": "2026-11-23",
+   "score": 25,
+   "scoreCommune": 25.6,
+   "statut": "nouveau",
+   "pourquoi": "SRU 18 % pour 20 %, environ 40 LLS manquants, 98 demandes en attente. 413 €/m² de terrain (réf. commune 228,2 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "oui"
+   },
+   "id": "lbc-3312518443",
+   "rang": 69,
+   "taux": 18,
+   "cible": 20,
+   "manque": 40,
+   "pm2Terrain": 228.2
+  },
+  {
+   "titre": "Maison 155 m² sur terrain 2 589 m²",
+   "commune": "Gauchy",
+   "insee": "02340",
+   "dep": "02",
+   "type": "Maison + terrain",
+   "surface": 2589,
+   "habitable": 155,
+   "prix": 170400,
+   "prixM2": 66,
+   "historiquePrix": [
+    {
+     "date": "2026-11-20",
+     "prix": 170400
+    }
+   ],
+   "source": "Leboncoin (pro)",
+   "url": "https://www.leboncoin.fr/vi/3312548933.htm",
+   "dateAnnonce": "2026-11-20",
+   "vuLe": "2026-11-23",
+   "score": 63,
+   "scoreCommune": 48,
+   "statut": "nouveau",
+   "pourquoi": "SRU 23,6 % pour 20 %, environ 0 LLS manquants, None demandes en attente. 66 €/m² de terrain (pas de référence communale), vendeur pro.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "oui"
+   },
+   "id": "lbc-3312548933",
+   "rang": 78,
+   "taux": 23.6,
+   "cible": 20,
+   "manque": 0,
+   "pm2Terrain": null
+  },
+  {
+   "titre": "Maison 113 m² sur terrain 2 845 m²",
+   "commune": "Ferrière-La-Grande",
+   "insee": "59230",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 2845,
+   "habitable": 113,
+   "prix": 225000,
+   "prixM2": 79,
+   "historiquePrix": [
+    {
+     "date": "2026-11-23",
+     "prix": 225000
+    }
+   ],
+   "source": "Leboncoin (pro)",
+   "url": "https://www.leboncoin.fr/vi/3315262379.htm",
+   "autresAnnonces": [
+    "https://www.bienici.com/annonce/ag743447-561964202"
+   ],
+   "dateAnnonce": "2026-11-23",
+   "vuLe": "2026-11-23",
+   "score": 27,
+   "scoreCommune": 37.1,
+   "statut": "nouveau",
+   "pourquoi": "Zone A/N probable. SRU 22,4 % pour 20 %, environ 0 LLS manquants, 160 demandes en attente. 79 €/m² de terrain (pas de référence communale), vendeur pro.",
+   "zonage": {
+    "statut": "probable",
+    "constructible": "non",
+    "zone": "A",
+    "zoneLong": "Zone agricole",
+    "lat": 50.246167,
+    "lon": 4.003613
+   },
+   "id": "lbc-3315262379",
+   "rang": 52,
+   "taux": 22.4,
+   "cible": 20,
+   "manque": 0,
+   "pm2Terrain": null
+  },
+  {
+   "titre": "Terrain 2 084 m²",
+   "commune": "Cormontreuil",
+   "insee": "51172",
+   "dep": "51",
+   "type": "Terrain",
+   "surface": 2084,
+   "habitable": null,
+   "prix": 229000,
+   "prixM2": 110,
+   "historiquePrix": [
+    {
+     "date": "2026-11-19",
+     "prix": 229000
+    }
+   ],
+   "source": "SeLoger",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjUsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFP1uJ9oBGa34l6p_ko90KTHzQrE_Q218iyVpY9lBmr9T2kE0eEQCTzvl5_IHlK8plKqCRLsnm71SjeEs-rxqkpO_gDzx9G6sO0LTdl57KXABc",
+   "dateAnnonce": "2026-11-19",
+   "vuLe": "2026-11-23",
+   "score": 50,
+   "scoreCommune": 49,
+   "statut": "nouveau",
+   "pourquoi": "SRU 21 % pour 20 %, environ 0 LLS manquants, None demandes en attente. 110 €/m² de terrain (réf. commune 29,4 €/m²), vendeur non précisé. Baisse de 275 000 à 229 000 € signalée par SeLoger le 19/11 ; peut-être le même terrain que lbc-3209876423 (3 062 m² à 275 000 €).",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "oui"
+   },
+   "id": "seloger-cormontreuil-2084",
+   "rang": 82,
+   "taux": 21,
+   "cible": 20,
+   "manque": 0,
+   "pm2Terrain": 29.4
+  },
+  {
+   "titre": "Terrain 2 852 m²",
+   "commune": "Lestrem",
+   "insee": "62502",
+   "dep": "62",
+   "type": "Terrain",
+   "surface": 2852,
+   "habitable": null,
+   "prix": 118000,
+   "prixM2": 41,
+   "historiquePrix": [
+    {
+     "date": "2026-11-21",
+     "prix": 118000
+    }
+   ],
+   "source": "SeLoger",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjcsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFTGvuI6zPjo5pXtOFcVBsakEFIpBPZ3DmCSTHiXwNYZZqaUkE04A1TngSyzBDSoeKnU2anMt3TxrLa4Ur4bbZG_vZO3Pg5JnwJ-25-XYqculy6",
+   "dateAnnonce": "2026-11-21",
+   "vuLe": "2026-11-23",
+   "score": 62,
+   "scoreCommune": 44.6,
+   "statut": "nouveau",
+   "pourquoi": "SRU 16,4 % pour 20 %, environ 71 LLS manquants, 144 demandes en attente. 41 €/m² de terrain (réf. commune 71,4 €/m²), vendeur non précisé.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "inconnu"
+   },
+   "id": "seloger-lestrem-2852",
+   "rang": 39,
+   "taux": 16.4,
+   "cible": 20,
+   "manque": 71,
+   "pm2Terrain": 71.4
+  },
+  {
+   "titre": "Maison 221 m² sur terrain 2 200 m²",
+   "commune": "Longueil-Sainte-Marie",
+   "insee": null,
+   "dep": "60",
+   "type": "Maison + terrain",
+   "surface": 2200,
+   "habitable": 221,
+   "prix": 370000,
+   "prixM2": 168,
+   "historiquePrix": [
+    {
+     "date": "2026-11-19",
+     "prix": 370000
+    }
+   ],
+   "source": "SeLoger",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjUsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFOooMCXnMX8sv_afPrEVsZ3Ec_k22AOuyVjYfY7PkD-biCzeHLAqijn81_pvixU2uxyC2LHskE3Z2pOEtpo2EczQJNPn7DaerWVrVCPtvD56bPFw",
+   "dateAnnonce": "2026-11-19",
+   "vuLe": "2026-11-23",
+   "score": 0,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU",
+   "id": "seloger-longueil-sainte-marie-2200"
+  },
+  {
+   "titre": "Maison 101 m² sur terrain 5 513 m²",
+   "commune": "Raimbeaucourt",
+   "insee": "59489",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 5513,
+   "habitable": 101,
+   "prix": 300000,
+   "prixM2": 54,
+   "historiquePrix": [
+    {
+     "date": "2026-11-19",
+     "prix": 300000
+    }
+   ],
+   "source": "SeLoger",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjUsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFOfejcCbK-AEDPB5gA9ZERElh43ZWXmzkwCJ-B3xyKk5I02-RkbDASSt1KShNMT2gyhstG8X7kBkTDkrqsWxv0-rhBe7sbmBNXlqdujAa-48ap",
+   "dateAnnonce": "2026-11-19",
+   "vuLe": "2026-11-23",
+   "score": 63,
+   "scoreCommune": 37.6,
+   "statut": "nouveau",
+   "pourquoi": "SRU 17,3 % pour 20 %, environ 45 LLS manquants, 105 demandes en attente. 54 €/m² de terrain (réf. commune 117,7 €/m²), vendeur non précisé.",
+   "zonage": {
+    "statut": "introuvable",
+    "constructible": "inconnu"
+   },
+   "id": "seloger-raimbeaucourt-5513",
+   "rang": 50,
+   "taux": 17.3,
+   "cible": 20,
+   "manque": 45,
+   "pm2Terrain": 117.7
+  },
+  {
+   "titre": "Terrain 2 766 m²",
+   "commune": "Sailly-Sur-La-Lys",
+   "insee": "62736",
+   "dep": "62",
+   "type": "Terrain",
+   "surface": 2766,
+   "habitable": null,
+   "prix": 119500,
+   "prixM2": 43,
+   "historiquePrix": [
+    {
+     "date": "2026-11-17",
+     "prix": 119500
+    }
+   ],
+   "source": "SeLoger",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjMsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFK8PHmq4F19kHtE-r3dnu5OC6hwHIdfsSkvioiDrwFdvWw2nBabKMXHzsgwbb44Fgpjs1A9L3VaS12xbw-2SEi2khXzLuXV0M_thTQJ9TALBQ",
+   "dateAnnonce": "2026-11-17",
+   "vuLe": "2026-11-23",
+   "score": 38,
+   "scoreCommune": 55.5,
+   "statut": "nouveau",
+   "pourquoi": "Zone A/N probable. SRU 11,2 % pour 20 %, environ 142 LLS manquants, 87 demandes en attente. 43 €/m² de terrain (réf. commune 199,9 €/m²), vendeur non précisé.",
+   "zonage": {
+    "statut": "probable",
+    "constructible": "non",
+    "zone": "A",
+    "zoneLong": "zone agricole",
+    "lat": 50.646664,
+    "lon": 2.782216
+   },
+   "id": "seloger-sailly-sur-la-lys-2766",
+   "rang": 24,
+   "taux": 11.2,
+   "cible": 20,
+   "manque": 142,
+   "pm2Terrain": 199.9
+  },
+  {
+   "titre": "Maison 355 m² sur terrain 2 500 m²",
+   "commune": "Steenvoorde",
+   "insee": "59580",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 2500,
+   "habitable": 355,
+   "prix": 473800,
+   "prixM2": 190,
+   "historiquePrix": [
+    {
+     "date": "2026-11-22",
+     "prix": 473800
+    }
+   ],
+   "source": "SeLoger",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjgsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFT2hEyyHVreLt5Ey_rEWB0v8_udgsG48ye761vv7-QhtbtmxsCYCy5v6pIkZttHgaCj2IA2HElYgRscEoV4WDtd8O1XyjSQ0ZI_VbWV7xkuyA",
+   "dateAnnonce": "2026-11-22",
+   "vuLe": "2026-11-23",
+   "score": 64,
+   "scoreCommune": 68.6,
+   "statut": "nouveau",
+   "pourquoi": "SRU 9,8 % pour 20 %, environ 183 LLS manquants, 146 demandes en attente. 190 €/m² de terrain (réf. commune 42 €/m²), vendeur non précisé.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "inconnu"
+   },
+   "id": "seloger-steenvoorde-2500",
+   "rang": 5,
+   "taux": 9.8,
+   "cible": 20,
+   "manque": 183,
+   "pm2Terrain": 42
+  },
+  {
+   "titre": "Maison 100 m² sur terrain 4 000 m²",
+   "commune": "Verberie",
+   "insee": "60667",
+   "dep": "60",
+   "type": "Maison + terrain",
+   "surface": 4000,
+   "habitable": 100,
+   "prix": 120000,
+   "prixM2": 30,
+   "historiquePrix": [
+    {
+     "date": "2026-11-18",
+     "prix": 120000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjQsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFN0v0GQU2v8Si2H7J3HbY9VnyU-KaNOvmy2sFHliKQCcTPxVEGxud_qcvPwHEGmS59RvE3aNK1iQ5yvkvRLBIHAMyBVD0NLzMv_2AkLOPtPZvo",
+   "dateAnnonce": "2026-11-18",
+   "vuLe": "2026-11-23",
+   "score": 66,
+   "scoreCommune": 43,
+   "statut": "nouveau",
+   "pourquoi": "SRU 26,2 % pour 20 %, environ 0 LLS manquants, None demandes en attente. 30 €/m² de terrain (réf. commune 131 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "inconnu"
+   },
+   "id": "seloger-verberie-4000",
+   "rang": 72,
+   "taux": 26.2,
+   "cible": 20,
+   "manque": 0,
+   "pm2Terrain": 131
   }
  ]
 }
