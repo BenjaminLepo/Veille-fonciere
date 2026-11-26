@@ -5,24 +5,29 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Veille foncière SRU</title>
 <meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <style>
 :root{--bg:#f6f5f2;--card:#fff;--ink:#1d2329;--mute:#66707a;--line:#e3e0da;--acc:#1f5c8a;--ok:#2e7d4f;--warn:#a86a12;--bad:#a33a3a;--chip:#eef2f6}
 @media (prefers-color-scheme:dark){:root{--bg:#15181b;--card:#1e2226;--ink:#e8eaec;--mute:#9aa3ab;--line:#2f353a;--acc:#6aa8d8;--ok:#6cc08f;--warn:#e0a54a;--bad:#e07a7a;--chip:#262c32}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-header{padding:28px 16px 12px;max-width:1100px;margin:0 auto}
+header{padding:24px 16px 10px;max-width:1280px;margin:0 auto}
 h1{margin:0;font-size:24px;letter-spacing:-.01em}
 .sub{color:var(--mute);margin-top:4px;font-size:14px}
-.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
-.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;min-width:120px}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;min-width:110px}
 .stat b{display:block;font-size:22px}
 .stat span{color:var(--mute);font-size:12px}
-.bar{position:sticky;top:0;z-index:2;background:var(--bg);border-bottom:1px solid var(--line)}
-.bar>div{max-width:1100px;margin:0 auto;padding:10px 16px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-input,select{font:inherit;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:7px 10px}
+nav.tabs{display:flex;gap:2px;flex-wrap:wrap;margin-top:16px;border-bottom:1px solid var(--line)}
+nav.tabs a{padding:8px 14px;text-decoration:none;color:var(--mute);font-weight:550;border-bottom:2px solid transparent;margin-bottom:-1px}
+nav.tabs a[aria-current=page]{color:var(--ink);border-color:var(--acc)}
+nav.tabs a.ext{margin-left:auto;color:var(--acc)}
+.bar{position:sticky;top:0;z-index:1100;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar>div{max-width:1280px;margin:0 auto;padding:10px 16px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+input,select,textarea{font:inherit;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:7px 10px}
 input[type=search]{flex:1 1 200px}
-label.chk{display:flex;gap:6px;align-items:center;color:var(--mute);font-size:14px}
-main{max-width:1100px;margin:0 auto;padding:16px;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+.wrap{max-width:1280px;margin:0 auto;padding:16px}
+#v-liste{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
 .top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
 .com{font-weight:650;font-size:16px}
@@ -38,60 +43,123 @@ main{max-width:1100px;margin:0 auto;padding:16px;display:grid;grid-template-colu
 .s-nouveau{color:var(--acc)}.s-a_etudier{color:var(--warn)}.s-contacte{color:var(--ok)}.s-retenu{color:var(--ok);font-weight:600}.s-ecarte{color:var(--bad)}
 .why{font-size:13px;color:var(--mute)}
 .hist{font-size:12px;color:var(--warn)}
-.links a{color:var(--acc);font-size:14px;margin-right:12px}
+.adr{font-size:13px}
+.links{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.links a,.lk{color:var(--acc);font-size:14px;background:none;border:0;padding:0;cursor:pointer;font:inherit;font-size:14px;text-decoration:underline}
 .empty{grid-column:1/-1;text-align:center;color:var(--mute);padding:40px}
 #auth{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:14px;font-size:14px;color:var(--mute)}
-#auth input{min-width:220px}
 button{font:inherit;cursor:pointer;border-radius:8px;padding:7px 12px;border:1px solid var(--acc);background:var(--acc);color:#fff}
 button.ghost{background:transparent;color:var(--acc)}
 .edit{display:flex;flex-direction:column;gap:6px;border-top:1px dashed var(--line);padding-top:8px}
-.edit select,.edit textarea{font:inherit;font-size:14px;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 8px}
-.edit textarea{min-height:52px;resize:vertical}
+.edit textarea{min-height:52px;resize:vertical;font-size:14px}
 .saved{font-size:12px;color:var(--ok)}.err{color:var(--bad)}
-footer{max-width:1100px;margin:0 auto;padding:8px 16px 32px;color:var(--mute);font-size:12px}
+/* carte */
+#v-carte{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:12px;height:calc(100vh - 150px);min-height:520px}
+#map{border:1px solid var(--line);border-radius:12px;min-height:420px}
+#mside{overflow:auto;display:flex;flex-direction:column;gap:10px}
+.legend{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:12px}
+.legend .row{display:flex;gap:8px;align-items:center;margin:3px 0}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:50%;flex:none}
+.legend .sq{border-radius:2px;width:14px;height:10px}
+.leaflet-popup-content{font:13px/1.4 system-ui,sans-serif;min-width:220px}
+.leaflet-popup-content b{font-size:14px}
+.pin{width:16px;height:16px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.35)}
+.pin.approx{border-style:dashed;opacity:.85}
+.pin.exact{width:18px;height:18px;border:3px solid #111}
+/* adresses */
+table{border-collapse:collapse;width:100%;background:var(--card);border:1px solid var(--line);border-radius:10px;font-size:14px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-size:12px;color:var(--mute);text-transform:uppercase;letter-spacing:.05em;background:var(--chip)}
+td .ac{position:relative}
+td input.a{width:100%;min-width:240px}
+td input.p{width:120px}
+.sug{position:absolute;left:0;right:0;top:100%;z-index:50;background:var(--card);border:1px solid var(--line);border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,.15)}
+.sug button{display:block;width:100%;text-align:left;background:none;border:0;color:var(--ink);padding:6px 10px;border-radius:0}
+.sug button:hover{background:var(--chip)}
+.lock{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px;text-align:center;color:var(--mute)}
+footer{max-width:1280px;margin:0 auto;padding:8px 16px 32px;color:var(--mute);font-size:12px}
+@media (max-width:860px){#v-carte{grid-template-columns:1fr;height:auto}#map{height:65vh}.tbl{overflow-x:auto}}
 </style>
 </head>
 <body>
 <header>
-  <h1>Veille foncière — communes SRU Nord, Pas-de-Calais, Oise</h1>
+  <h1>Veille foncière — communes SRU Hauts-de-France et Marne</h1>
   <div class="sub" id="maj">Chargement…</div>
   <div class="stats" id="stats"></div>
   <div id="auth"></div>
+  <nav class="tabs" aria-label="Vues">
+    <a href="#liste" data-v="liste">Fonciers</a>
+    <a href="#carte" data-v="carte">Carte</a>
+    <a href="#adresses" data-v="adresses">Adresses</a>
+    <a class="ext" href="https://claude.ai/artifact/StKz8YMv1EPLMPTNx9U86d" target="_blank" rel="noopener">Atlas foncier ↗</a>
+  </nav>
 </header>
 <div class="bar"><div>
   <input type="search" id="q" placeholder="Rechercher une commune, un type…">
-  <select id="dep"><option value="">Tous départements</option><option>59</option><option>62</option><option>60</option></select>
+  <select id="dep"><option value="">Tous départements</option><option value="59">Nord (59)</option><option value="62">Pas-de-Calais (62)</option><option value="60">Oise (60)</option><option value="02">Aisne (02)</option><option value="80">Somme (80)</option><option value="51">Marne (51)</option></select>
   <select id="st"><option value="actifs">À traiter et suivis</option><option value="">Tous les statuts</option><option value="nouveau">Nouveau</option><option value="a_etudier">À étudier</option><option value="contacte">Contacté</option><option value="retenu">Retenu</option><option value="ecarte">Écarté</option></select>
   <select id="tri"><option value="score">Tri : score</option><option value="date">Tri : plus récents</option><option value="pm2">Tri : €/m² terrain</option><option value="surface">Tri : surface</option></select>
 </div></div>
-<main id="list"></main>
-<footer>Mise à jour automatique chaque lundi à partir des alertes Leboncoin et Bien'ici. Zonage PLU indicatif, à confirmer sur le Géoportail de l'Urbanisme.</footer>
+<main class="wrap">
+  <section id="v-liste"></section>
+  <section id="v-carte" hidden>
+    <div id="map" aria-label="Carte des fonciers et des communes cibles"></div>
+    <aside id="mside">
+      <div class="legend">
+        <b>Fonciers</b>
+        <div class="row"><i style="background:#1f5c8a"></i>Nouveau</div>
+        <div class="row"><i style="background:#c98a1a"></i>À étudier</div>
+        <div class="row"><i style="background:#2e7d4f"></i>Contacté / retenu</div>
+        <div class="row"><i style="background:#a33a3a"></i>Écarté</div>
+        <div class="row"><i style="background:#888;border:3px solid #111"></i>Adresse renseignée par l'équipe</div>
+        <div class="row"><i style="background:#888"></i>Parcelle probable (cadastre)</div>
+        <div class="row"><i style="background:#888;opacity:.6;border:2px dashed #fff"></i>Position approximative (centre de la commune)</div>
+        <b style="display:block;margin-top:8px">Communes cibles SRU (score /100)</b>
+        <div class="row"><i class="sq" style="background:#7a1f3d"></i>70 et plus</div>
+        <div class="row"><i class="sq" style="background:#c0496f"></i>50 à 69</div>
+        <div class="row"><i class="sq" style="background:#e8a3b8"></i>moins de 50</div>
+        <p style="margin:8px 0 0;color:var(--mute)">Fonds IGN : plan, photo aérienne et parcelles cadastrales (zoomez pour les voir).</p>
+      </div>
+      <div id="mlist"></div>
+    </aside>
+  </section>
+  <section id="v-adresses" hidden></section>
+</main>
+<footer>Mise à jour automatique chaque lundi à partir des alertes Leboncoin, Bien'ici et SeLoger. Zonage PLU indicatif, à confirmer sur le Géoportail de l'Urbanisme. Les adresses ne sont visibles qu'avec le code équipe.</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
 const SUPABASE_URL="https://yfzejzxdaujnvuzxcqvp.supabase.co";
 const SUPABASE_KEY="sb_publishable_i9-JAAq3EXUPXeXvhVetug_Pg34Zo07";
 const LIB={nouveau:"Nouveau",a_etudier:"À étudier",contacte:"Contacté",retenu:"Retenu",ecarte:"Écarté"};
+const COL={nouveau:"#1f5c8a",a_etudier:"#c98a1a",contacte:"#2e7d4f",retenu:"#2e7d4f",ecarte:"#a33a3a"};
 const fmt=n=>n==null?"n.c.":Math.round(n).toLocaleString("fr-FR");
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const safeUrl=u=>/^https:\/\//.test(u||"")?u:"#";
-let DATA=[],EDIT=false,USER="",CODE="";
+let DATA=[],EDIT=false,USER="",CODE="",ADR=new Map(),COMM=null,CENTRE={},VIEW="liste";
 const ls={get:k=>{try{return localStorage.getItem(k)||""}catch(e){return ""}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}},del:k=>{try{localStorage.removeItem(k)}catch(e){}}};
 async function rpc(fn,body){const r=await fetch(SUPABASE_URL+"/rest/v1/rpc/"+fn,{method:"POST",headers:{"apikey":SUPABASE_KEY,"Content-Type":"application/json"},body:JSON.stringify(body)});
   const j=await r.json().catch(()=>null);if(!r.ok)throw new Error((j&&j.message)||("Erreur "+r.status));return j}
 function zonage(z){if(!z||!z.statut)return '<span class="chip">Zonage à vérifier</span>';
   const c={oui:"constructible",non:"non constructible",partiel:"partiellement constructible"}[z.constructible]||"zonage inconnu";
   return `<span class="chip">${esc(z.zone?z.zone+" · ":"")}${c} (${esc(z.statut)})</span>`}
+/* position d'un foncier : adresse équipe > parcelle probable > centre de la commune */
+function pos(f){const a=ADR.get(f.id);if(a&&a.lat!=null)return{ll:[a.lat,a.lon],k:"exact"};
+  const z=f.zonage||{};if(z.lat!=null&&z.lon!=null)return{ll:[z.lat,z.lon],k:"parcelle"};
+  const c=CENTRE[f.insee];if(!c)return null;let h=0;for(const ch of f.id)h=(h*31+ch.charCodeAt(0))>>>0;const t=(h%360)*Math.PI/180,r=.004+(h%7)*.0012;return{ll:[c[0]+r*Math.sin(t),c[1]+r*1.5*Math.cos(t)],k:"approx"}}
 function card(f){
   const h=(f.historiquePrix||[]);const baisse=h.length>1&&h[h.length-1].prix<h[0].prix;
   const autres=(f.autresAnnonces||[]).map((u,i)=>`<a href="${esc(safeUrl(u))}" target="_blank" rel="noopener">Autre annonce ${i+1}</a>`).join("");
+  const a=ADR.get(f.id);const p=pos(f);
   return `<article class="card">
   <div class="top"><div class="com">${esc(f.commune)} <small>${f.rang?"rang "+f.rang+" · ":""}${esc(f.dep)}</small></div><div class="score" title="Score /100">${f.score??"–"}</div></div>
   <div class="titre">${esc(f.titre)}</div>
   <div class="kv"><div><b>${f.surface==null?"n.c.":fmt(f.surface)+" m²"}</b><span>terrain</span></div><div><b>${fmt(f.prix)} €</b><span>prix</span></div><div><b>${fmt(f.prixM2)}</b><span>€/m² terrain${f.pm2Terrain?" (réf. "+fmt(f.pm2Terrain)+")":""}</span></div></div>
   <div class="chips"><span class="chip s-${esc(f.statut)}">${LIB[f.statut]||esc(f.statut)}</span>${zonage(f.zonage)}<span class="chip">${esc(f.source)}</span><span class="chip">vu le ${esc((f.dateAnnonce||"").split("-").reverse().join("/"))}</span></div>
   ${baisse?`<div class="hist">Baisse de prix : ${fmt(h[0].prix)} → ${fmt(h[h.length-1].prix)} €</div>`:""}
+  ${a&&a.adresse?`<div class="adr">📍 ${esc(a.adresse)}${a.parcelle?" · parcelle "+esc(a.parcelle):""}</div>`:""}
   <div class="why">${esc(f.pourquoi)}</div>
   ${EDIT?editBlock(f):""}
-  <div class="links"><a href="${esc(safeUrl(f.url))}" target="_blank" rel="noopener">Voir l'annonce</a>${autres}</div>
+  <div class="links"><a href="${esc(safeUrl(f.url))}" target="_blank" rel="noopener">Voir l'annonce</a>${autres}${p?`<button class="lk" data-voir="${esc(f.id)}">Voir sur la carte</button>`:""}${EDIT?`<button class="lk" data-adr="${esc(f.id)}">${a&&a.adresse?"Modifier l'adresse":"Renseigner l'adresse"}</button>`:""}</div>
   </article>`}
 function editBlock(f){
   const opts=Object.entries(LIB).map(([k,v])=>`<option value="${k}"${k===f.statut?" selected":""}>${v}</option>`).join("");
@@ -104,45 +172,130 @@ async function save(box){
   try{await rpc("maj_statut",{code:CODE,p_id:id,p_statut:statut,p_note:note,p_par:USER})}
   catch(e){msg.className="e-msg err";msg.textContent="Échec : "+e.message;return}
   const f=DATA.find(x=>x.id===id);if(f){f.statut=statut;f.note=note;f.par=USER}
-  msg.className="e-msg saved";msg.textContent="Enregistré";stats();
+  msg.className="e-msg saved";msg.textContent="Enregistré";stats();if(VIEW==="carte")drawMarkers();
 }
-document.addEventListener("click",e=>{const b=e.target.closest(".e-save");if(b)save(b.closest(".edit"))});
 async function connect(code,nom){
   const rows=await rpc("lire_statuts",{code});
   if(!Array.isArray(rows))throw new Error("Code d'accès incorrect");
   CODE=code;USER=nom;EDIT=true;ls.set("vf_code",code);ls.set("vf_nom",nom);
   const m=new Map(rows.map(r=>[r.id,r]));DATA.forEach(f=>{const r=m.get(f.id);if(r){f.statut=r.statut;f.note=r.note;f.par=r.par}});
+  try{const a=await rpc("lire_adresses",{code});ADR=new Map((a||[]).map(r=>[r.id,r]))}catch(e){}
 }
 function authBar(err){
   const el=document.getElementById("auth");
   if(EDIT){el.innerHTML=`<span>Mode équipe : ${esc(USER)}</span><button class="ghost" id="out">Quitter</button>`;
     document.getElementById("out").onclick=()=>{ls.del("vf_code");location.reload()};return}
-  el.innerHTML=`<span>Équipe :</span><input id="nom" placeholder="Votre prénom" value="${esc(ls.get("vf_nom"))}" style="min-width:140px"><input id="code" type="password" placeholder="Code d'accès" style="min-width:140px"><button id="go">Modifier les statuts</button><span id="amsg" class="err">${esc(err||"")}</span>`;
+  el.innerHTML=`<span>Équipe :</span><input id="nom" placeholder="Votre prénom" value="${esc(ls.get("vf_nom"))}" style="min-width:140px"><input id="code" type="password" placeholder="Code d'accès" style="min-width:140px"><button id="go">Modifier statuts et adresses</button><span id="amsg" class="err">${esc(err||"")}</span>`;
   const go=async()=>{const nom=document.getElementById("nom").value.trim(),code=document.getElementById("code").value.trim();
     if(!nom||!code){document.getElementById("amsg").textContent="Prénom et code requis";return}
     document.getElementById("amsg").textContent="";ls.set("vf_nom",nom);
-    try{await connect(code,nom);authBar();stats();render()}catch(e){authBar(e.message)}};
+    try{await connect(code,nom);authBar();refresh()}catch(e){authBar(e.message)}};
   document.getElementById("go").onclick=go;document.getElementById("code").onkeydown=e=>{if(e.key==="Enter")go()};
 }
 async function auth(){const c=ls.get("vf_code"),n=ls.get("vf_nom");
   if(c&&n){try{await connect(c,n)}catch(e){ls.del("vf_code")}}authBar();}
 function stats(){const n=s=>DATA.filter(f=>f.statut===s).length;
-  document.getElementById("stats").innerHTML=[["Fonciers suivis",DATA.length],["Nouveaux",n("nouveau")],["À étudier",n("a_etudier")],["Contactés",n("contacte")],["Retenus",n("retenu")]].map(([a,b])=>`<div class="stat"><b>${b}</b><span>${a}</span></div>`).join("")}
-function render(){
+  document.getElementById("stats").innerHTML=[["Fonciers suivis",DATA.length],["Nouveaux",n("nouveau")],["À étudier",n("a_etudier")],["Contactés",n("contacte")],["Retenus",n("retenu")],["Adresses connues",[...ADR.values()].filter(a=>a.adresse).length]].map(([a,b])=>`<div class="stat"><b>${b}</b><span>${a}</span></div>`).join("")}
+function filtered(){
   const q=document.getElementById("q").value.trim().toLowerCase(),dep=document.getElementById("dep").value,st=document.getElementById("st").value,tri=document.getElementById("tri").value;
-  let l=DATA.filter(f=>(!dep||f.dep===dep)&&(st===""||(st==="actifs"?f.statut!=="ecarte":f.statut===st))&&(!q||[f.commune,f.titre,f.type,f.source].join(" ").toLowerCase().includes(q)));
+  let l=DATA.filter(f=>(!dep||f.dep===dep)&&(st===""||(st==="actifs"?f.statut!=="ecarte":f.statut===st))&&(!q||[f.commune,f.titre,f.type,f.source,(ADR.get(f.id)||{}).adresse].join(" ").toLowerCase().includes(q)));
   const k={score:f=>-(f.score??-1),date:f=>-(Date.parse(f.dateAnnonce)||0),pm2:f=>f.prixM2??1e9,surface:f=>-(f.surface??0)}[tri];
-  l.sort((a,b)=>k(a)-k(b));
-  document.getElementById("list").innerHTML=l.length?l.map(card).join(""):'<div class="empty">Aucun foncier ne correspond à ces filtres.</div>';
+  return l.sort((a,b)=>k(a)-k(b));
 }
-fetch("data.json?"+Date.now()).then(r=>r.json()).then(d=>{
-  DATA=d.fonciers||[];
+function renderListe(){const l=filtered();
+  document.getElementById("v-liste").innerHTML=l.length?l.map(card).join(""):'<div class="empty">Aucun foncier ne correspond à ces filtres.</div>';}
+
+/* ---------- carte ---------- */
+let MAP=null,MK=null,CL=null,MARK={};
+const IGN=(layer,fmt,style="normal")=>`https://data.geopf.fr/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=${layer}&STYLE=${encodeURIComponent(style)}&TILEMATRIXSET=PM&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=${fmt}`;
+const ATT='&copy; <a href="https://www.ign.fr/" target="_blank" rel="noopener">IGN</a> Géoplateforme';
+function commColor(s){return s>=70?"#7a1f3d":s>=50?"#c0496f":"#e8a3b8"}
+function initMap(){
+  if(MAP)return;
+  MAP=L.map("map",{zoomControl:true}).setView([50.3,2.9],8);
+  const plan=L.tileLayer(IGN("GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2","image/png"),{maxZoom:19,attribution:ATT}).addTo(MAP);
+  const photo=L.tileLayer(IGN("ORTHOIMAGERY.ORTHOPHOTOS","image/jpeg"),{maxZoom:19,attribution:ATT});
+  const cad=L.tileLayer(IGN("CADASTRALPARCELS.PARCELLAIRE_EXPRESS","image/png","PCI vecteur"),{maxZoom:19,minZoom:14,opacity:.85,attribution:ATT}).addTo(MAP);
+  if(COMM){CL=L.geoJSON(COMM,{style:f=>({color:commColor(f.properties.score),weight:1.5,fillColor:commColor(f.properties.score),fillOpacity:.12}),
+    onEachFeature:(f,l)=>{const p=f.properties;l.bindTooltip(`${esc(p.nom)} · score ${p.score??"–"}`,{sticky:true});
+      l.bindPopup(`<b>${esc(p.nom)}</b> (${esc(p.dep)}) · rang ${p.rang??"–"}<br>SRU ${p.taux!=null?(p.taux*100).toFixed(1).replace(".",",")+" %":"n.c."} pour ${p.cible?Math.round(p.cible*100)+" %":"–"} · ${fmt(p.manque)} LLS manquants<br>${p.demandes!=null?fmt(p.demandes)+" demandes LLS":""}${p.pm2Terrain?" · terrain ≈ "+fmt(p.pm2Terrain)+" €/m²":""}`)}}).addTo(MAP)}
+  MK=L.layerGroup().addTo(MAP);
+  L.control.layers({"Plan IGN":plan,"Photo aérienne":photo},{"Parcelles cadastrales":cad,...(CL?{"Communes cibles SRU":CL}:{}),"Fonciers":MK},{collapsed:true}).addTo(MAP);
+  L.control.scale({imperial:false}).addTo(MAP);
+}
+function popup(f){const a=ADR.get(f.id),p=pos(f);
+  const loc={exact:"Adresse renseignée",parcelle:"Parcelle probable"+(f.zonage&&f.zonage.zone?" · zone "+esc(f.zonage.zone):""),approx:"Position approximative (centre de la commune)"}[p.k];
+  const gp=`https://www.geoportail-urbanisme.gouv.fr/map/#tile=1&lon=${p.ll[1]}&lat=${p.ll[0]}&zoom=17`;
+  return `<b>${esc(f.commune)}</b> · ${esc(f.titre)}<br>${f.surface?fmt(f.surface)+" m² · ":""}${fmt(f.prix)} € · score ${f.score??"–"}<br><span style="color:${COL[f.statut]}">${LIB[f.statut]||""}</span> · ${loc}${a&&a.adresse?"<br>📍 "+esc(a.adresse):""}<br><a href="${esc(safeUrl(f.url))}" target="_blank" rel="noopener">Annonce</a> · <a href="${esc(gp)}" target="_blank" rel="noopener">PLU (Géoportail)</a>${EDIT?` · <a href="#adresses" data-adr="${esc(f.id)}">Adresse</a>`:""}`}
+function drawMarkers(){if(!MAP)return;MK.clearLayers();MARK={};
+  const l=filtered();const pts=[];
+  for(const f of l){const p=pos(f);if(!p)continue;
+    const cls=p.k==="exact"?"pin exact":p.k==="approx"?"pin approx":"pin";
+    const m=L.marker(p.ll,{icon:L.divIcon({className:"",html:`<div class="${cls}" style="background:${COL[f.statut]||"#888"}"></div>`,iconSize:[18,18],iconAnchor:[9,9]}),title:f.commune});
+    m.bindPopup(popup(f));m.addTo(MK);MARK[f.id]=m;pts.push(p.ll)}
+  document.getElementById("mlist").innerHTML=`<div class="legend"><b>${l.length} foncier(s) affiché(s)</b>${l.length-pts.length?`<br><span style="color:var(--mute)">${l.length-pts.length} sans position (commune hors cible)</span>`:""}</div>`+
+    l.filter(f=>MARK[f.id]).slice(0,60).map(f=>`<button class="ghost" style="width:100%;text-align:left;color:var(--ink);border-color:var(--line)" data-voir="${esc(f.id)}"><b>${esc(f.commune)}</b> · ${f.surface?fmt(f.surface)+" m²":"surface n.c."} · ${fmt(f.prix)} €<br><small style="color:${COL[f.statut]}">${LIB[f.statut]||""}</small> <small style="color:var(--mute)">score ${f.score??"–"}</small></button>`).join("");
+  return pts}
+function voir(id){location.hash="carte";setTimeout(()=>{const m=MARK[id];if(m){const f=DATA.find(x=>x.id===id),p=f&&pos(f);MAP.setView(m.getLatLng(),p&&p.k==="approx"?13:17);m.openPopup()}},120)}
+
+/* ---------- adresses ---------- */
+let SUGT=null;
+function renderAdresses(){const el=document.getElementById("v-adresses");
+  if(!EDIT){el.innerHTML='<div class="lock">Saisissez votre prénom et le code équipe en haut de page pour renseigner les adresses. Elles restent réservées à l\'équipe et servent à placer précisément les fonciers sur la carte.</div>';return}
+  const l=filtered();
+  el.innerHTML=`<p class="sub" style="margin-top:0">Quand l'adresse exacte d'un bien est connue (visite, agent, vendeur), saisissez-la : choisissez une proposition de la Base Adresse Nationale pour placer le point sur la carte. La parcelle (ex. AB 123) est facultative.</p>
+  <div class="tbl"><table><thead><tr><th>Foncier</th><th>Adresse</th><th>Parcelle</th><th></th></tr></thead><tbody>${l.map(f=>{const a=ADR.get(f.id)||{};
+    return `<tr data-id="${esc(f.id)}" id="adr-${esc(f.id)}"><td><b>${esc(f.commune)}</b> <small style="color:var(--mute)">${esc(f.dep)}</small><br><small>${esc(f.titre)} · ${fmt(f.prix)} €</small><br><small class="s-${esc(f.statut)}">${LIB[f.statut]||""}</small></td>
+    <td><div class="ac"><input class="a" value="${esc(a.adresse||"")}" placeholder="N°, rue, ${esc(f.commune)}" data-lat="${a.lat??""}" data-lon="${a.lon??""}" autocomplete="off"><div class="sug" hidden></div></div><small class="geo" style="color:var(--mute)">${a.lat!=null?"Point placé sur la carte":"Pas encore placé"}${a.par?" · par "+esc(a.par):""}</small></td>
+    <td><input class="p" value="${esc(a.parcelle||"")}" placeholder="AB 123"></td>
+    <td><button class="a-save">Enregistrer</button><div class="a-msg" style="font-size:12px"></div></td></tr>`}).join("")}</tbody></table></div>`;
+}
+async function suggest(inp){const tr=inp.closest("tr"),f=DATA.find(x=>x.id===tr.dataset.id),box=inp.nextElementSibling,q=inp.value.trim();
+  inp.dataset.lat="";inp.dataset.lon="";tr.querySelector(".geo").textContent="Choisissez une proposition pour placer le point";
+  if(q.length<4){box.hidden=true;return}
+  try{const u=`https://api-adresse.data.gouv.fr/search/?q=${encodeURIComponent(q)}&limit=6${f&&f.insee?"&citycode="+f.insee:""}`;
+    const j=await (await fetch(u)).json();const fs=(j.features||[]);
+    box.innerHTML=fs.map((x,i)=>`<button type="button" data-i="${i}">${esc(x.properties.label)}</button>`).join("")||'<div style="padding:6px 10px;color:var(--mute)">Aucune adresse trouvée dans la commune</div>';
+    box.hidden=false;box._f=fs}catch(e){box.hidden=true}}
+async function saveAdr(tr){const id=tr.dataset.id,inp=tr.querySelector("input.a"),par=tr.querySelector("input.p").value.trim(),msg=tr.querySelector(".a-msg");
+  const lat=inp.dataset.lat?+inp.dataset.lat:null,lon=inp.dataset.lon?+inp.dataset.lon:null;
+  msg.className="a-msg";msg.textContent="Enregistrement…";
+  try{const r=await rpc("maj_adresse",{code:CODE,p_id:id,p_adresse:inp.value.trim(),p_lat:lat,p_lon:lon,p_parcelle:par,p_par:USER});ADR.set(id,r)}
+  catch(e){msg.className="a-msg err";msg.textContent="Échec : "+e.message;return}
+  msg.className="a-msg saved";msg.textContent=lat!=null?"Enregistré, point placé":"Enregistré (sans point sur la carte)";stats()}
+document.addEventListener("input",e=>{if(e.target.matches("#v-adresses input.a")){clearTimeout(SUGT);const t=e.target;SUGT=setTimeout(()=>suggest(t),250)}});
+document.addEventListener("click",e=>{
+  const s=e.target.closest(".sug button");if(s){const box=s.parentElement,x=box._f[+s.dataset.i],inp=box.previousElementSibling;
+    inp.value=x.properties.label;inp.dataset.lat=x.geometry.coordinates[1];inp.dataset.lon=x.geometry.coordinates[0];box.hidden=true;
+    inp.closest("tr").querySelector(".geo").textContent="Point prêt : enregistrez";return}
+  if(!e.target.closest(".ac"))document.querySelectorAll(".sug").forEach(b=>b.hidden=true);
+  const b=e.target.closest(".e-save");if(b){save(b.closest(".edit"));return}
+  const a=e.target.closest(".a-save");if(a){saveAdr(a.closest("tr"));return}
+  const v=e.target.closest("[data-voir]");if(v){voir(v.dataset.voir);return}
+  const d=e.target.closest("[data-adr]");if(d){e.preventDefault();const id=d.dataset.adr;location.hash="adresses";
+    setTimeout(()=>{const tr=document.getElementById("adr-"+id);if(tr){tr.scrollIntoView({block:"center"});tr.querySelector("input.a").focus()}},80)}
+});
+
+/* ---------- vues ---------- */
+function show(){VIEW=(location.hash.slice(1)||"liste");if(!["liste","carte","adresses"].includes(VIEW))VIEW="liste";
+  for(const v of ["liste","carte","adresses"])document.getElementById("v-"+v).hidden=v!==VIEW;
+  document.querySelectorAll("nav.tabs a[data-v]").forEach(a=>a.setAttribute("aria-current",a.dataset.v===VIEW?"page":"false"));
+  refresh()}
+let fitted=false;
+function refresh(){stats();
+  if(VIEW==="liste")renderListe();
+  else if(VIEW==="carte"){initMap();MAP.invalidateSize();const pts=drawMarkers();if(!fitted&&pts.length){MAP.fitBounds(pts,{padding:[30,30],maxZoom:12});fitted=true}}
+  else renderAdresses()}
+window.addEventListener("hashchange",show);
+["q","dep","st","tri"].forEach(i=>document.getElementById(i).addEventListener("input",refresh));
+Promise.all([fetch("data.json?"+Date.now()).then(r=>r.json()),fetch("communes.geojson").then(r=>r.json()).catch(()=>null)]).then(([d,g])=>{
+  DATA=d.fonciers||[];COMM=g;
+  if(g)for(const f of g.features){const b=L.geoJSON(f).getBounds().getCenter();CENTRE[f.properties.insee]=[b.lat,b.lng]}
   const m=d.maj?new Date(d.maj):null;
   document.getElementById("maj").textContent="Dernière mise à jour : "+(m?m.toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long",year:"numeric"}):"inconnue");
-  stats();render();
-  auth().then(()=>{stats();render()}).catch(()=>{});
+  show();
+  auth().then(refresh).catch(()=>{});
 }).catch(()=>{document.getElementById("maj").textContent="Données indisponibles pour le moment.";});
-["q","dep","st","tri"].forEach(i=>document.getElementById(i).addEventListener("input",render));
 </script>
 </body>
 </html>
