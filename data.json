@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-23T17:15",
+ "maj": "2026-11-26T18:16",
  "fonciers": [
   {
    "titre": "Maison 5 pièces 147 m² (exclusivité)",
@@ -23,7 +23,7 @@
    "vuLe": "2026-11-23",
    "score": 33,
    "scoreCommune": 55.2,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 18,6 % pour 25 %, environ 127 LLS manquants, 142 demandes en attente. Surface du terrain non indiquée (alerte ≥ 2 000 m²), vendeur pro.",
    "zonage": {
     "statut": "introuvable",
@@ -58,7 +58,7 @@
    "vuLe": "2026-11-23",
    "score": 20,
    "scoreCommune": 32.8,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 22,4 % pour 25 %, environ 70 LLS manquants, 143 demandes en attente. Surface du terrain non indiquée (alerte ≥ 2 000 m²), vendeur pro.",
    "zonage": {
     "statut": "introuvable",
@@ -93,7 +93,7 @@
    "vuLe": "2026-11-02",
    "score": 20,
    "scoreCommune": 32.8,
-   "statut": "a_etudier",
+   "statut": "ecarte",
    "pourquoi": "SRU 22,4 % pour 25 %, environ 70 LLS manquants, 143 demandes en attente. Surface de terrain non précisée (alerte ≥ 2 000 m²), vendeur pro.",
    "zonage": {
     "statut": "introuvable",
@@ -107,7 +107,7 @@
    "pm2Terrain": 121
   },
   {
-   "titre": "Maison 250 m² sur terrain 14 600 m²",
+   "titre": "Maison 250 m² sur terrain 14 600 m²",
    "commune": "Beuvry",
    "insee": "62126",
    "dep": "62",
@@ -131,7 +131,7 @@
    "vuLe": "2026-11-23",
    "score": 42,
    "scoreCommune": 36.6,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 21,2 % pour 20 %, environ 0 LLS manquants, 272 demandes en attente. 5 €/m² de terrain (réf. commune 123,8 €/m²), vendeur pro. Viager occupé : prix = bouquet, plus rente de 1 762 €/mois (terrain 14 600 m² selon SeLoger).",
    "zonage": {
     "statut": "probable",
@@ -178,6 +178,41 @@
    "cible": 25,
    "manque": 875,
    "pm2Terrain": 403.8
+  },
+  {
+   "id": "bienici-citya-1-947-TMAI947-230065",
+   "titre": "Maison 5 pièces 169 m²",
+   "commune": "Lestrem",
+   "insee": "62502",
+   "dep": "62",
+   "type": "Maison + terrain",
+   "surface": null,
+   "habitable": 169,
+   "prix": 398000,
+   "prixM2": null,
+   "historiquePrix": [
+    {
+     "date": "2026-11-26",
+     "prix": 398000
+    }
+   ],
+   "source": "Bien'ici (pro)",
+   "url": "https://www.bienici.com/annonce/citya-1-947-TMAI947-230065",
+   "dateAnnonce": "2026-11-26",
+   "vuLe": "2026-11-26",
+   "score": 27,
+   "scoreCommune": 44.6,
+   "statut": "nouveau",
+   "pourquoi": "SRU 16,4 % pour 20 %, environ 71 LLS manquants, 144 demandes en attente. Surface du terrain non indiquée (alerte ≥ 2 000 m²), vendeur pro.",
+   "zonage": {
+    "statut": "introuvable",
+    "constructible": "inconnu"
+   },
+   "rang": 39,
+   "taux": 16.4,
+   "cible": 20,
+   "manque": 71,
+   "pm2Terrain": 71.4
   },
   {
    "titre": "Terrain 2 390 m² (Citya Lillers)",
@@ -232,7 +267,7 @@
    "vuLe": "2026-11-23",
    "score": 34,
    "scoreCommune": 56.5,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 17 % pour 20 %, environ 114 LLS manquants, 218 demandes en attente. Surface du terrain non indiquée (alerte ≥ 2 000 m²), vendeur pro.",
    "zonage": {
     "statut": "introuvable",
@@ -378,14 +413,15 @@
    "url": "https://www.bienici.com/annonce/entities-1039527-3879422",
    "autresAnnonces": [
     "https://www.bienici.com/annonce/entities-1039527-3879442",
-    "https://www.bienici.com/annonce/entities-1039527-3879441"
+    "https://www.bienici.com/annonce/entities-1039527-3879441",
+    "https://www.leboncoin.fr/vi/3317906681.htm"
    ],
    "dateAnnonce": "2026-10-31",
    "vuLe": "2026-11-02",
    "score": 60,
    "scoreCommune": 47.3,
    "statut": "ecarte",
-   "pourquoi": "SRU 16,4 % pour 20 %, environ 65 LLS manquants, 74 demandes en attente. 58 €/m² de terrain (réf. commune 52 €/m²), vendeur pro. Offre constructeur, aussi vendu avec maison neuve dès 459 340 €. Zonage non vérifié (cadastre injoignable le 02/11).",
+   "pourquoi": "SRU 16,4 % pour 20 %, environ 65 LLS manquants, 74 demandes en attente. 58 €/m² de terrain (réf. commune 52 €/m²), vendeur pro. Offre constructeur, aussi vendu avec maison neuve dès 459 340 € (et 334 340 € pour 100 m² sur Leboncoin). Zonage non vérifié (cadastre injoignable le 02/11).",
    "id": "bienici-entities-1039527-3879422",
    "rang": 33,
    "taux": 16.4,
@@ -508,7 +544,7 @@
    "vuLe": "2026-11-09",
    "score": 27,
    "scoreCommune": 44.6,
-   "statut": "a_etudier",
+   "statut": "ecarte",
    "pourquoi": "SRU 16,4 % pour 20 %, environ 71 LLS manquants, 144 demandes en attente. Surface du terrain non indiquée (alerte ≥ 2 000 m²), vendeur pro.",
    "zonage": {
     "statut": "introuvable",
@@ -578,7 +614,7 @@
    "vuLe": "2026-11-23",
    "score": 28,
    "scoreCommune": 46.2,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 17,1 % pour 20 %, environ 59 LLS manquants, 244 demandes en attente. Surface du terrain non indiquée (alerte ≥ 2 000 m²), vendeur pro.",
    "zonage": {
     "statut": "introuvable",
@@ -652,7 +688,7 @@
    "vuLe": "2026-11-16",
    "score": 22,
    "scoreCommune": 36.6,
-   "statut": "contacte",
+   "statut": "ecarte",
    "pourquoi": "SRU 21,2 % pour 20 %, environ 0 LLS manquants, 272 demandes en attente. Surface du terrain non précisée (alerte ≥ 2 000 m²), vendeur pro.",
    "zonage": {
     "statut": "introuvable",
@@ -666,7 +702,7 @@
    "pm2Terrain": 123.8
   },
   {
-   "titre": "Maison 210 m² sur terrain 2 077 m²",
+   "titre": "Maison 210 m² sur terrain 2 077 m²",
    "commune": "Vimy",
    "insee": "62861",
    "dep": "62",
@@ -687,7 +723,7 @@
    "vuLe": "2026-11-23",
    "score": 43,
    "scoreCommune": 37.9,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 17,1 % pour 20 %, environ 53 LLS manquants, 101 demandes en attente. 177 €/m² de terrain (réf. commune 89,1 €/m²), vendeur pro. Même surface de terrain que lbc-3173316003 (329 000 €), peut-être le même bien à un autre prix.",
    "zonage": {
     "statut": "incertain",
@@ -701,7 +737,7 @@
    "pm2Terrain": 89.1
   },
   {
-   "titre": "Maison 328 m² sur terrain 8 015 m²",
+   "titre": "Maison 328 m² sur terrain 8 015 m²",
    "commune": "Steenvoorde",
    "insee": "59580",
    "dep": "59",
@@ -722,7 +758,7 @@
    "vuLe": "2026-11-23",
    "score": 81,
    "scoreCommune": 68.6,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 9,8 % pour 20 %, environ 183 LLS manquants, 146 demandes en attente. 74 €/m² de terrain (réf. commune 42 €/m²), vendeur pro.",
    "zonage": {
     "statut": "introuvable",
@@ -825,7 +861,7 @@
    "vuLe": "2026-11-09",
    "score": 37,
    "scoreCommune": 41.1,
-   "statut": "a_etudier",
+   "statut": "ecarte",
    "pourquoi": "SRU 17,6 % pour 20 %, environ 47 LLS manquants, 171 demandes en attente. 211 €/m² de terrain, vendeur pro. Peut-être le même bien que lbc-3301009560 (Verneuil, 196 m², 497 000 €, terrain 2 649 m²).",
    "zonage": {
     "statut": "incertain",
@@ -836,7 +872,11 @@
    "taux": 17.6,
    "cible": 20,
    "manque": 47,
-   "pm2Terrain": null
+   "pm2Terrain": null,
+   "autresAnnonces": [
+    "https://www.seloger.com/annonce/achat/hauts-de-france/oise-60/verneuil-en-halatte-60550/26LJWK3L12MT",
+    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjgsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFTv3QEeBohBdTKJzy9ApuuLQ2JLDrYigm7Jbv-B6iRWMvSYnpZ7nNsLwOqFGaPiusVhElQ7qIDKIAGiUfSYw7ly_Y2zEniu8pXRauG0ZUjGQWb"
+   ]
   },
   {
    "titre": "Maison 180 m² sur terrain 2 900 m²",
@@ -955,7 +995,7 @@
    "pm2Terrain": 89.1
   },
   {
-   "titre": "Maison 327 m² sur terrain 8 000 m²",
+   "titre": "Maison 327 m² sur terrain 8 000 m²",
    "commune": "Steenvoorde",
    "insee": "59580",
    "dep": "59",
@@ -973,13 +1013,14 @@
    "source": "Leboncoin (pro)",
    "url": "https://www.leboncoin.fr/vi/3176939500.htm",
    "autresAnnonces": [
-    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjksInQiOjYwMzAsInMiOjUxfQAzAAAAAAFWI2IHGFT6FbMxNuda8Fxjp0C1LBOhaRT3saKk3q4oivpcIzay9aF6zM_GLzH4KZW5uGRneY8hsasW51ZLVNacSL9QKCh1nJaemTNPwq5fHCQl"
+    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjksInQiOjYwMzAsInMiOjUxfQAzAAAAAAFWI2IHGFT6FbMxNuda8Fxjp0C1LBOhaRT3saKk3q4oivpcIzay9aF6zM_GLzH4KZW5uGRneY8hsasW51ZLVNacSL9QKCh1nJaemTNPwq5fHCQl",
+    "https://www.bellesdemeures.com/265988625/detail.htm"
    ],
    "dateAnnonce": "2026-11-20",
    "vuLe": "2026-11-23",
    "score": 81,
    "scoreCommune": 68.6,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 9,8 % pour 20 %, environ 183 LLS manquants, 146 demandes en attente. 80 €/m² de terrain (réf. commune 42 €/m²), vendeur pro. Proche de lbc-3114579613 (8 015 m², 590 000 €), peut-être le même bien.",
    "zonage": {
     "statut": "introuvable",
@@ -1052,7 +1093,7 @@
    "vuLe": "2026-11-09",
    "score": 29,
    "scoreCommune": 25.6,
-   "statut": "a_etudier",
+   "statut": "ecarte",
    "pourquoi": "SRU 18 % pour 20 %, environ 40 LLS manquants, 98 demandes en attente. 306 €/m² de terrain (réf. commune 228 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -1142,7 +1183,7 @@
    "pm2Terrain": 226.3
   },
   {
-   "titre": "Terrain 3 062 m²",
+   "titre": "Terrain 3 062 m²",
    "commune": "Cormontreuil",
    "insee": "51172",
    "dep": "51",
@@ -1163,7 +1204,7 @@
    "vuLe": "2026-11-23",
    "score": 66,
    "scoreCommune": 49,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 21 % pour 20 %, environ 0 LLS manquants, None demandes en attente. 90 €/m² de terrain (réf. commune 29,4 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -1216,7 +1257,7 @@
    "pm2Terrain": 130.5
   },
   {
-   "titre": "Maison 302 m² sur terrain 4 700 m²",
+   "titre": "Maison 302 m² sur terrain 4 700 m²",
    "commune": "Wavrin",
    "insee": "59653",
    "dep": "59",
@@ -1237,7 +1278,7 @@
    "vuLe": "2026-11-23",
    "score": 59,
    "scoreCommune": 47.9,
-   "statut": "nouveau",
+   "statut": "a_etudier",
    "pourquoi": "SRU 21,4 % pour 25 %, environ 117 LLS manquants, 284 demandes en attente. 148 €/m² de terrain (réf. commune 195,7 €/m²), vendeur pro.",
    "zonage": {
     "statut": "probable",
@@ -1401,12 +1442,16 @@
    "type": "Maison + terrain",
    "surface": 2864,
    "habitable": 195,
-   "prix": 598000,
-   "prixM2": 209,
+   "prix": 575000,
+   "prixM2": 201,
    "historiquePrix": [
     {
      "date": "2026-10-29",
      "prix": 598000
+    },
+    {
+     "date": "2026-11-25",
+     "prix": 575000
     }
    ],
    "source": "Leboncoin (pro)",
@@ -1415,8 +1460,8 @@
    "vuLe": "2026-11-02",
    "score": 31,
    "scoreCommune": 25.6,
-   "statut": "a_etudier",
-   "pourquoi": "SRU 18 % pour 20 %, environ 40 LLS manquants, 98 demandes en attente. 209 €/m² de terrain (réf. commune 228 €/m²), vendeur pro.",
+   "statut": "ecarte",
+   "pourquoi": "SRU 18 % pour 20 %, environ 40 LLS manquants, 98 demandes en attente. 209 €/m² de terrain (réf. commune 228 €/m²), vendeur pro. Prix passé de 598 000 à 575 000 € le 25/11.",
    "zonage": {
     "statut": "probable",
     "constructible": "oui",
@@ -1430,7 +1475,10 @@
    "taux": 18,
    "cible": 20,
    "manque": 40,
-   "pm2Terrain": 228.2
+   "pm2Terrain": 228.2,
+   "autresAnnonces": [
+    "https://www.seloger.com/annonce/achat/hauts-de-france/pas-de-calais-62/neufchatel-hardelot-62152/26FQQ9JDGCZF"
+   ]
   },
   {
    "titre": "Maison 99 m² sur 2 375 m²",
@@ -1513,13 +1561,14 @@
    "source": "Leboncoin (pro)",
    "url": "https://www.leboncoin.fr/vi/3263976282.htm",
    "autresAnnonces": [
-    "https://www.bienici.com/annonce/iad-france-2102187"
+    "https://www.bienici.com/annonce/iad-france-2102187",
+    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjYsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFQqLyAD5tkBoCS9k2jo7MNQfa6FCOsSvXarJ-6nBEuO8iDn7Bqy5BibYM8VpT2x9cJPIzpqZQ8CwTHzWCzAGUA5VAae8dbnuMkZEhrBL9mbHy5"
    ],
    "dateAnnonce": "2026-11-01",
    "vuLe": "2026-11-02",
    "score": 64,
    "scoreCommune": 56.5,
-   "statut": "a_etudier",
+   "statut": "ecarte",
    "pourquoi": "SRU 17 % pour 20 %, environ 114 LLS manquants, 218 demandes en attente. 77 €/m² de terrain (réf. commune 28 €/m²), vendeur pro.",
    "zonage": {
     "statut": "probable",
@@ -1558,7 +1607,7 @@
    "vuLe": "2026-11-09",
    "score": 52,
    "scoreCommune": 36.4,
-   "statut": "contacte",
+   "statut": "ecarte",
    "pourquoi": "SRU 19,2 % pour 20 %, environ 15 LLS manquants, 169 demandes en attente. 129 €/m² de terrain (réf. commune 178 €/m²), vendeur pro.",
    "zonage": {
     "statut": "introuvable",
@@ -1593,7 +1642,7 @@
    "vuLe": "2026-11-09",
    "score": 22,
    "scoreCommune": 44.2,
-   "statut": "a_etudier",
+   "statut": "ecarte",
    "pourquoi": "Zone A/N probable (A). SRU 21 % pour 20 %, environ 0 LLS manquants, 274 demandes en attente. 125 €/m² de terrain (réf. commune 130 €/m²), vendeur pro.",
    "zonage": {
     "statut": "probable",
@@ -1608,7 +1657,10 @@
    "taux": 21,
    "cible": 20,
    "manque": 0,
-   "pm2Terrain": 130.5
+   "pm2Terrain": 130.5,
+   "autresAnnonces": [
+    "https://www.bienici.com/annonce/citya-1-961-NDF-HAZE-42974"
+   ]
   },
   {
    "titre": "Maison 4 pièces 105 m²",
@@ -1632,7 +1684,7 @@
    "vuLe": "2026-11-09",
    "score": 41,
    "scoreCommune": 34.7,
-   "statut": "contacte",
+   "statut": "ecarte",
    "pourquoi": "SRU 24,9 % pour 25 %, environ 2 LLS manquants, 227 demandes en attente. 100 €/m² de terrain (réf. commune 778 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -1810,7 +1862,7 @@
    "score": 37,
    "scoreCommune": 44.2,
    "statut": "ecarte",
-   "pourquoi": "Zone A/N probable (Ast). SRU 21 % pour 20 %, environ 0 LLS manquants, 274 demandes en attente. 70 €/m² de terrain (réf. commune 130,5 €/m²), vendeur pro. Prix passé de 475 940 à 469 000 € le 20/11.",
+   "pourquoi": "Zone A/N probable (Ast). SRU 21 % pour 20 %, environ 0 LLS manquants, 274 demandes en attente. 70 €/m² de terrain (réf. commune 130,5 €/m²), vendeur pro. Prix passé de 475 940 à 469 000 € le 20/11.",
    "zonage": {
     "statut": "probable",
     "constructible": "non",
@@ -1851,7 +1903,7 @@
    "vuLe": "2026-11-16",
    "score": 60,
    "scoreCommune": 55.9,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 13,9 % pour 20 %, environ 102 LLS manquants, 96 demandes en attente. 155 €/m² de terrain (réf. commune 144,7 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -1886,7 +1938,7 @@
    "vuLe": "2026-11-16",
    "score": 25,
    "scoreCommune": 42.1,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "Zone A/N probable (A). SRU 23,8 % pour 25 %, environ 57 LLS manquants, 539 demandes en attente. 124 €/m² de terrain (réf. commune 351 €/m²), vendeur pro.",
    "zonage": {
     "statut": "probable",
@@ -1965,7 +2017,7 @@
    "vuLe": "2026-11-16",
    "score": 56,
    "scoreCommune": 72.5,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 20 % pour 25 %, environ 875 LLS manquants, 1643 demandes en attente. 668 €/m² de terrain (réf. commune 403,8 €/m²), vendeur pro.",
    "zonage": {
     "statut": "probable",
@@ -1983,7 +2035,7 @@
    "pm2Terrain": 403.8
   },
   {
-   "titre": "Maison 100 m² sur terrain 2 595 m²",
+   "titre": "Maison 100 m² sur terrain 2 595 m²",
    "commune": "Verneuil-En-Halatte",
    "insee": "60670",
    "dep": "60",
@@ -2004,7 +2056,7 @@
    "vuLe": "2026-11-23",
    "score": 58,
    "scoreCommune": 41.1,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 17,6 % pour 20 %, environ 47 LLS manquants, 171 demandes en attente. 64 €/m² de terrain (pas de référence communale), vendeur pro.",
    "zonage": {
     "statut": "introuvable",
@@ -2018,7 +2070,7 @@
    "pm2Terrain": null
   },
   {
-   "titre": "Terrain 2 860 m²",
+   "titre": "Terrain 2 860 m²",
    "commune": "Vitry-En-Artois",
    "insee": "62865",
    "dep": "62",
@@ -2044,7 +2096,7 @@
    "vuLe": "2026-11-23",
    "score": 65,
    "scoreCommune": 50.5,
-   "statut": "nouveau",
+   "statut": "a_etudier",
    "pourquoi": "SRU 18,8 % pour 20 %, environ 24 LLS manquants, 134 demandes en attente. 44 €/m² de terrain (réf. commune 9 €/m²), vendeur pro. Aussi annoncé à 129 000 € (autre annonce Leboncoin, Bien'ici, SeLoger).",
    "zonage": {
     "statut": "incertain",
@@ -2058,7 +2110,7 @@
    "pm2Terrain": 9
   },
   {
-   "titre": "Maison 196 m² sur terrain 5 152 m²",
+   "titre": "Maison 196 m² sur terrain 5 152 m²",
    "commune": "Quesnoy-Sur-Deûle",
    "insee": "59482",
    "dep": "59",
@@ -2079,7 +2131,7 @@
    "vuLe": "2026-11-23",
    "score": 20,
    "scoreCommune": 32.8,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "Zone A/N probable. SRU 22,4 % pour 25 %, environ 70 LLS manquants, 143 demandes en attente. 126 €/m² de terrain (réf. commune 121 €/m²), vendeur pro.",
    "zonage": {
     "statut": "probable",
@@ -2097,7 +2149,7 @@
    "pm2Terrain": 121
   },
   {
-   "titre": "Maison 130 m² sur terrain 2 834 m²",
+   "titre": "Maison 130 m² sur terrain 2 834 m²",
    "commune": "Halluin",
    "insee": "59279",
    "dep": "59",
@@ -2118,7 +2170,7 @@
    "vuLe": "2026-11-23",
    "score": 40,
    "scoreCommune": 41.8,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 27,5 % pour 25 %, environ 0 LLS manquants, 998 demandes en attente. 210 €/m² de terrain (réf. commune 234,7 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -2130,6 +2182,111 @@
    "cible": 25,
    "manque": 0,
    "pm2Terrain": 234.7
+  },
+  {
+   "id": "lbc-3279778049",
+   "titre": "Maison 5 pièces 122 m² sur 2 310 m²",
+   "commune": "Coulogne",
+   "insee": "62244",
+   "dep": "62",
+   "type": "Maison + terrain",
+   "surface": 2310,
+   "habitable": 122,
+   "prix": 220000,
+   "prixM2": 95,
+   "historiquePrix": [
+    {
+     "date": "2026-11-26",
+     "prix": 220000
+    }
+   ],
+   "source": "Leboncoin (pro)",
+   "url": "https://www.leboncoin.fr/vi/3279778049.htm",
+   "dateAnnonce": "2026-11-26",
+   "vuLe": "2026-11-26",
+   "score": 56,
+   "scoreCommune": 40.7,
+   "statut": "nouveau",
+   "pourquoi": "SRU 19,1 % pour 20 %, environ 22 LLS manquants, 192 demandes en attente. 95 €/m² de terrain (réf. commune 205,1 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "introuvable",
+    "constructible": "inconnu"
+   },
+   "rang": 45,
+   "taux": 19.1,
+   "cible": 20,
+   "manque": 22,
+   "pm2Terrain": 205.1
+  },
+  {
+   "id": "lbc-3279793755",
+   "titre": "Maison 4 pièces 129 m² sur 2 900 m²",
+   "commune": "Bondues",
+   "insee": "59090",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 2900,
+   "habitable": 129,
+   "prix": 829500,
+   "prixM2": 286,
+   "historiquePrix": [
+    {
+     "date": "2026-11-26",
+     "prix": 829500
+    }
+   ],
+   "source": "Leboncoin (pro)",
+   "url": "https://www.leboncoin.fr/vi/3279793755.htm",
+   "dateAnnonce": "2026-11-26",
+   "vuLe": "2026-11-26",
+   "score": 52,
+   "scoreCommune": 61.2,
+   "statut": "nouveau",
+   "pourquoi": "SRU 19,2 % pour 25 %, environ 232 LLS manquants, 407 demandes en attente. 286 €/m² de terrain (réf. commune 306,0 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "oui"
+   },
+   "rang": 12,
+   "taux": 19.2,
+   "cible": 25,
+   "manque": 232,
+   "pm2Terrain": 306
+  },
+  {
+   "id": "lbc-3279865835",
+   "titre": "Maison 6 pièces 253 m² sur 2 663 m²",
+   "commune": "Aire-Sur-La-Lys",
+   "insee": "62014",
+   "dep": "62",
+   "type": "Maison + terrain",
+   "surface": 2663,
+   "habitable": 253,
+   "prix": 497000,
+   "prixM2": 187,
+   "historiquePrix": [
+    {
+     "date": "2026-11-26",
+     "prix": 497000
+    }
+   ],
+   "source": "Leboncoin (pro)",
+   "url": "https://www.leboncoin.fr/vi/3279865835.htm",
+   "dateAnnonce": "2026-11-26",
+   "vuLe": "2026-11-26",
+   "score": 60,
+   "scoreCommune": 59.7,
+   "statut": "nouveau",
+   "pourquoi": "Taux SRU non renseigné (cible 20 %), 369 demandes en attente. 187 €/m² de terrain (réf. commune 64,7 €/m²), vendeur pro. Proche de lbc-3299283191 (même commune, prix voisin, surface différente) : peut-être le même bien.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "inconnu"
+   },
+   "rang": 13,
+   "taux": null,
+   "cible": 20,
+   "manque": null,
+   "pm2Terrain": 64.7
   },
   {
    "titre": "Maison plain-pied 5 pièces 110 m² sur 2 000 m²",
@@ -2252,7 +2409,8 @@
    "source": "Leboncoin (pro)",
    "url": "https://www.leboncoin.fr/vi/3297224221.htm",
    "autresAnnonces": [
-    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjgsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFUy1balkEJX1xPVAsypsDDHgSvx9NTzRvSgiaJfHoPOEsxgc3QSUtQ1X5TCL324J-klFLlNnkfPaD2DfFwUbwY8gRBSKhPFIsKGeLZTM4Xhw"
+    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjgsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFUy1balkEJX1xPVAsypsDDHgSvx9NTzRvSgiaJfHoPOEsxgc3QSUtQ1X5TCL324J-klFLlNnkfPaD2DfFwUbwY8gRBSKhPFIsKGeLZTM4Xhw",
+    "https://www.seloger.com/annonce/achat/hauts-de-france/pas-de-calais-62/marck-62730/26PBZR718DQK"
    ],
    "dateAnnonce": "2026-10-29",
    "vuLe": "2026-11-02",
@@ -2709,7 +2867,8 @@
    "source": "Leboncoin (pro)",
    "url": "https://www.leboncoin.fr/vi/3301235648.htm",
    "autresAnnonces": [
-    "https://www.bienici.com/annonce/netty-reference-house-1138"
+    "https://www.bienici.com/annonce/netty-reference-house-1138",
+    "https://www.seloger.com/annonce/achat/hauts-de-france/nord-59/santes-59211/26UX2ZITLSC8"
    ],
    "dateAnnonce": "2026-11-03",
    "vuLe": "2026-11-09",
@@ -3188,7 +3347,7 @@
    "vuLe": "2026-11-09",
    "score": 76,
    "scoreCommune": 59.7,
-   "statut": "contacte",
+   "statut": "ecarte",
    "pourquoi": "SRU None % pour 20 %, environ None LLS manquants, 369 demandes en attente. 45 €/m² de terrain (réf. commune 65 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -3297,7 +3456,7 @@
    "vuLe": "2026-11-16",
    "score": 59,
    "scoreCommune": 72.5,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 20 % pour 25 %, environ 875 LLS manquants, 1643 demandes en attente. 559 €/m² de terrain (réf. commune 403,8 €/m²), vendeur pro.",
    "zonage": {
     "statut": "probable",
@@ -3336,7 +3495,7 @@
    "vuLe": "2026-11-16",
    "score": 46,
    "scoreCommune": 59.7,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 21,1 % pour 25 %, environ 229 LLS manquants, 791 demandes en attente. 682 €/m² de terrain (réf. commune 329,3 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -3371,7 +3530,7 @@
    "vuLe": "2026-11-16",
    "score": 59,
    "scoreCommune": 55.5,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 11,2 % pour 20 %, environ 142 LLS manquants, 87 demandes en attente. 100 €/m² de terrain (réf. commune 199,9 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -3487,7 +3646,7 @@
    "vuLe": "2026-11-16",
    "score": 70,
    "scoreCommune": 68.6,
-   "statut": "a_etudier",
+   "statut": "ecarte",
    "pourquoi": "SRU 9,8 % pour 20 %, environ 183 LLS manquants, 146 demandes en attente. 101 €/m² de terrain (réf. commune 42 €/m²), vendeur pro.",
    "zonage": {
     "statut": "introuvable",
@@ -3522,7 +3681,7 @@
    "vuLe": "2026-11-16",
    "score": 59,
    "scoreCommune": 36.6,
-   "statut": "retenu",
+   "statut": "contacte",
    "pourquoi": "SRU 21,2 % pour 20 %, environ 0 LLS manquants, 272 demandes en attente. 98 €/m² de terrain (réf. commune 123,8 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -3632,7 +3791,7 @@
    "vuLe": "2026-11-16",
    "score": 45,
    "scoreCommune": 25.6,
-   "statut": "nouveau",
+   "statut": "a_etudier",
    "pourquoi": "SRU 18 % pour 20 %, environ 40 LLS manquants, 98 demandes en attente. 159 €/m² de terrain (réf. commune 228,2 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -3743,7 +3902,14 @@
     "https://www.bienici.com/annonce/entities-1039562-3963042",
     "https://www.leboncoin.fr/vi/3315993532.htm",
     "https://www.leboncoin.fr/vi/3314884193.htm",
-    "https://www.leboncoin.fr/vi/3313931686.htm"
+    "https://www.leboncoin.fr/vi/3313931686.htm",
+    "https://www.bienici.com/annonce/entities-1039562-3963043",
+    "https://www.seloger-construire.com/detail/287421841",
+    "https://www.leboncoin.fr/vi/3314500878.htm",
+    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjgsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFUKwWrJ0EisTKlCav1JMXeqaSOT_GQN94Gcv5uEOMjtZo_HtPxV_RjpDl5jB98oB1RVDAXc2i4YjQICe_43dmLEPsbzt_nI6iJyhmL-lV4Ow",
+    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjcsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFSrUrFNbtsdEE9rIvVNPUg1log8X76WXT6KyUYp_kwIiHQF7skDFyDrmzMV4CBAGk6xI9fspN08R9sfVypYVotMvLU0FGMiyneda0KheAMb52O",
+    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjcsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFSnbDCJ5pF5rXQIAK0ktiN1kp9azem6x6j_2aeWEdMIGgxqsOzxLBIOlNhLiK6y4NR8QvYA0uJKvOaR_jkyJ5SQnSXUR84gucyl58Dz20vpRXp",
+    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjMsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFK-oetDM7HjCBjSYlfOOv4RH3zd285DAvRFI8L6JrXMOA6KG-eMhdUNBREtEkAEJ9SMCt_sX27duL1FpB0z-fkc3uX_8FB5WvQRhtPwYN-Mmc"
    ],
    "dateAnnonce": "2026-11-14",
    "vuLe": "2026-11-16",
@@ -3798,7 +3964,7 @@
    "pm2Terrain": 196.7
   },
   {
-   "titre": "Maison 163 m² sur terrain 2 500 m²",
+   "titre": "Maison 163 m² sur terrain 2 500 m²",
    "commune": "Billy-Berclau",
    "insee": "62132",
    "dep": "62",
@@ -3816,13 +3982,14 @@
    "source": "Leboncoin (particulier)",
    "url": "https://www.leboncoin.fr/vi/3311771855.htm",
    "autresAnnonces": [
-    "https://www.leboncoin.fr/vi/3312360434.htm"
+    "https://www.leboncoin.fr/vi/3312360434.htm",
+    "https://www.leboncoin.fr/vi/3316208956.htm"
    ],
    "dateAnnonce": "2026-11-18",
    "vuLe": "2026-11-23",
    "score": 51,
    "scoreCommune": 46.2,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 17,1 % pour 20 %, environ 59 LLS manquants, 244 demandes en attente. 156 €/m² de terrain (réf. commune 181,7 €/m²), particulier.",
    "zonage": {
     "statut": "probable",
@@ -3840,7 +4007,7 @@
    "pm2Terrain": 181.7
   },
   {
-   "titre": "Maison sur terrain 2 700 m²",
+   "titre": "Maison sur terrain 2 700 m²",
    "commune": "Merville",
    "insee": "59400",
    "dep": "59",
@@ -3861,7 +4028,7 @@
    "vuLe": "2026-11-23",
    "score": 51,
    "scoreCommune": 44.2,
-   "statut": "nouveau",
+   "statut": "a_etudier",
    "pourquoi": "SRU 21 % pour 20 %, environ 0 LLS manquants, 274 demandes en attente. 111 €/m² de terrain (réf. commune 130,5 €/m²), particulier. L'annonce indique 3 740 m² habitables, sans doute une erreur de saisie.",
    "zonage": {
     "statut": "incertain",
@@ -3875,7 +4042,7 @@
    "pm2Terrain": 130.5
   },
   {
-   "titre": "Maison 173 m² sur terrain 2 010 m²",
+   "titre": "Maison 173 m² sur terrain 2 010 m²",
    "commune": "Neufchâtel-Hardelot",
    "insee": "62604",
    "dep": "62",
@@ -3900,7 +4067,7 @@
    "vuLe": "2026-11-23",
    "score": 25,
    "scoreCommune": 25.6,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 18 % pour 20 %, environ 40 LLS manquants, 98 demandes en attente. 413 €/m² de terrain (réf. commune 228,2 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -3914,7 +4081,7 @@
    "pm2Terrain": 228.2
   },
   {
-   "titre": "Maison 155 m² sur terrain 2 589 m²",
+   "titre": "Maison 155 m² sur terrain 2 589 m²",
    "commune": "Gauchy",
    "insee": "02340",
    "dep": "02",
@@ -3935,7 +4102,7 @@
    "vuLe": "2026-11-23",
    "score": 63,
    "scoreCommune": 48,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 23,6 % pour 20 %, environ 0 LLS manquants, None demandes en attente. 66 €/m² de terrain (pas de référence communale), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -3949,7 +4116,7 @@
    "pm2Terrain": null
   },
   {
-   "titre": "Maison 113 m² sur terrain 2 845 m²",
+   "titre": "Maison 113 m² sur terrain 2 845 m²",
    "commune": "Ferrière-La-Grande",
    "insee": "59230",
    "dep": "59",
@@ -3973,7 +4140,7 @@
    "vuLe": "2026-11-23",
    "score": 27,
    "scoreCommune": 37.1,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "Zone A/N probable. SRU 22,4 % pour 20 %, environ 0 LLS manquants, 160 demandes en attente. 79 €/m² de terrain (pas de référence communale), vendeur pro.",
    "zonage": {
     "statut": "probable",
@@ -3991,7 +4158,549 @@
    "pm2Terrain": null
   },
   {
-   "titre": "Terrain 2 084 m²",
+   "id": "lbc-3316193166",
+   "titre": "Terrain 2 000 m²",
+   "commune": "Flines-lez-Raches",
+   "insee": "59239",
+   "dep": "59",
+   "type": "Terrain",
+   "surface": 2000,
+   "habitable": null,
+   "prix": 110000,
+   "prixM2": 55,
+   "historiquePrix": [
+    {
+     "date": "2026-11-24",
+     "prix": 110000
+    }
+   ],
+   "source": "Leboncoin (particulier)",
+   "url": "https://www.leboncoin.fr/vi/3316193166.htm",
+   "dateAnnonce": "2026-11-24",
+   "vuLe": "2026-11-25",
+   "score": 35,
+   "scoreCommune": 35.3,
+   "statut": "nouveau",
+   "pourquoi": "Zone A/N probable. SRU 12,1 % pour 20 %, environ 190 LLS manquants, 134 demandes en attente. 55 €/m² de terrain (réf. commune 130,7 €/m²), vendeur particulier.",
+   "zonage": {
+    "statut": "probable",
+    "constructible": "non",
+    "zone": "Nzh",
+    "zoneLong": "Secteur naturel de zone à dominante humide",
+    "lat": 50.413553,
+    "lon": 3.213374
+   },
+   "rang": 16,
+   "taux": 12.1,
+   "cible": 20,
+   "manque": 190,
+   "pm2Terrain": 130.7
+  },
+  {
+   "id": "lbc-3316346805",
+   "titre": "Maison 147 m² sur terrain 3 458 m²",
+   "commune": "Bousbecque",
+   "insee": "59098",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 3458,
+   "habitable": 147,
+   "prix": 585000,
+   "prixM2": 169,
+   "historiquePrix": [
+    {
+     "date": "2026-11-24",
+     "prix": 585000
+    }
+   ],
+   "source": "Leboncoin (pro)",
+   "url": "https://www.leboncoin.fr/vi/3316346805.htm",
+   "dateAnnonce": "2026-11-24",
+   "vuLe": "2026-11-25",
+   "score": 61,
+   "scoreCommune": 33.1,
+   "statut": "nouveau",
+   "pourquoi": "SRU 18,6 % pour 25 %, environ 127 LLS manquants, 142 demandes en attente. 169 €/m² de terrain (pas de référence communale), vendeur pro.",
+   "zonage": {
+    "statut": "probable",
+    "constructible": "oui",
+    "zone": "UVD8.1",
+    "zoneLong": "Villes et villages durables - Hameaux",
+    "lat": 50.763255,
+    "lon": 3.089613
+   },
+   "rang": 26,
+   "taux": 18.6,
+   "cible": 25,
+   "manque": 127,
+   "pm2Terrain": null
+  },
+  {
+   "id": "lbc-3316418899",
+   "titre": "Maison 113 m² sur terrain 2 049 m²",
+   "commune": "Leers",
+   "insee": "59339",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 2049,
+   "habitable": 113,
+   "prix": 420000,
+   "prixM2": 205,
+   "historiquePrix": [
+    {
+     "date": "2026-11-24",
+     "prix": 420000
+    }
+   ],
+   "source": "Leboncoin (pro)",
+   "url": "https://www.leboncoin.fr/vi/3316418899.htm",
+   "dateAnnonce": "2026-11-24",
+   "vuLe": "2026-11-25",
+   "score": 51,
+   "scoreCommune": 40.9,
+   "statut": "nouveau",
+   "pourquoi": "SRU 20 % pour 25 %, environ 194 LLS manquants, 449 demandes en attente. 205 €/m² de terrain (réf. commune 253 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "probable",
+    "constructible": "oui",
+    "zone": "UCO4.2",
+    "zoneLong": "Villes de la couronne urbaine - Tissu résidentiel intermédiaire",
+    "lat": 50.687292,
+    "lon": 3.2341
+   },
+   "rang": 6,
+   "taux": 20,
+   "cible": 25,
+   "manque": 194,
+   "pm2Terrain": 253
+  },
+  {
+   "id": "lbc-3317087164",
+   "titre": "Maison 152 m² sur terrain 22 000 m²",
+   "commune": "Bailleul",
+   "insee": "59043",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 22000,
+   "habitable": 152,
+   "prix": 420000,
+   "prixM2": 19,
+   "historiquePrix": [
+    {
+     "date": "2026-11-25",
+     "prix": 420000
+    }
+   ],
+   "source": "Leboncoin (pro)",
+   "url": "https://www.leboncoin.fr/vi/3317087164.htm",
+   "dateAnnonce": "2026-11-25",
+   "vuLe": "2026-11-25",
+   "score": 62,
+   "scoreCommune": 22.5,
+   "statut": "nouveau",
+   "pourquoi": "SRU 22,2 % pour 20 %, environ 0 LLS manquants, 583 demandes en attente. 19 €/m² de terrain (réf. commune 196,7 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "non"
+   },
+   "rang": 51,
+   "taux": 22.2,
+   "cible": 20,
+   "manque": 0,
+   "pm2Terrain": 196.7
+  },
+  {
+   "id": "lbc-3317299804",
+   "titre": "Maison 200 m² sur terrain 16 425 m²",
+   "commune": "Ferrière-la-Grande",
+   "insee": "59230",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 16425,
+   "habitable": 200,
+   "prix": 355000,
+   "prixM2": 22,
+   "historiquePrix": [
+    {
+     "date": "2026-11-25",
+     "prix": 355000
+    }
+   ],
+   "source": "Leboncoin (pro)",
+   "url": "https://www.leboncoin.fr/vi/3317299804.htm",
+   "autresAnnonces": [
+    "https://www.bienici.com/annonce/netty-nideal-house-4647"
+   ],
+   "dateAnnonce": "2026-11-25",
+   "vuLe": "2026-11-25",
+   "score": 62,
+   "scoreCommune": 22.3,
+   "statut": "nouveau",
+   "pourquoi": "SRU 22,4 % pour 20 %, environ 0 LLS manquants, 160 demandes en attente. 22 €/m² de terrain (pas de référence communale), vendeur pro.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "non"
+   },
+   "rang": 52,
+   "taux": 22.4,
+   "cible": 20,
+   "manque": 0,
+   "pm2Terrain": null
+  },
+  {
+   "id": "lbc-3317635892",
+   "titre": "Maison 4 pièces 107 m² sur 5 919 m²",
+   "commune": "Aire-Sur-La-Lys",
+   "insee": "62014",
+   "dep": "62",
+   "type": "Maison + terrain",
+   "surface": 5919,
+   "habitable": 107,
+   "prix": 241500,
+   "prixM2": 41,
+   "historiquePrix": [
+    {
+     "date": "2026-11-26",
+     "prix": 241500
+    }
+   ],
+   "source": "Leboncoin (pro)",
+   "url": "https://www.leboncoin.fr/vi/3317635892.htm",
+   "dateAnnonce": "2026-11-26",
+   "vuLe": "2026-11-26",
+   "score": 46,
+   "scoreCommune": 59.7,
+   "statut": "nouveau",
+   "pourquoi": "Zone A/N probable. Taux SRU non renseigné (cible 20 %), 369 demandes en attente. 41 €/m² de terrain (réf. commune 64,7 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "probable",
+    "constructible": "non",
+    "zone": "A",
+    "zoneLong": "Zone agricole",
+    "lat": 50.656452,
+    "lon": 2.429619
+   },
+   "rang": 13,
+   "taux": null,
+   "cible": 20,
+   "manque": null,
+   "pm2Terrain": 64.7
+  },
+  {
+   "id": "seloger-amiens-2810",
+   "titre": "Maison 282 m² sur 2 810 m²",
+   "commune": "Amiens",
+   "insee": null,
+   "dep": "80",
+   "type": "Maison + terrain",
+   "surface": 2810,
+   "habitable": 282,
+   "prix": 950000,
+   "prixM2": 338,
+   "historiquePrix": [
+    {
+     "date": "2026-11-18",
+     "prix": 950000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjQsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFNf_Nu8r1GbTNGKriLLL0KONkHqAsMTGi7pEmrBVr0Z7bLf92_-VREZ3LOXNl7T0uwA5ZIKEZzwmfpVrKVMyvoSo_IxdFix3i9jDhUeslTOdWr",
+   "dateAnnonce": "2026-11-18",
+   "vuLe": "2026-11-26",
+   "score": null,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-anhiers-3180",
+   "titre": "Terrain 3 180 m²",
+   "commune": "Anhiers",
+   "insee": null,
+   "dep": "59",
+   "type": "Terrain à bâtir",
+   "surface": 3180,
+   "habitable": null,
+   "prix": 138000,
+   "prixM2": 43,
+   "historiquePrix": [
+    {
+     "date": "2026-11-18",
+     "prix": 138000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjQsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFMhsSHs3VuebOQcIHFXXsXTMJLTJHgxasywLUOM2fj5gmcquVyIpAUc5xir5wpGKwf0NClkk95WkzJggp7UBb5g2nzXR9SbUpCf18OH8vynkAx",
+   "dateAnnonce": "2026-11-18",
+   "vuLe": "2026-11-26",
+   "score": null,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-arras-2100",
+   "titre": "Maison 138 m² sur 2 100 m²",
+   "commune": "Arras",
+   "insee": null,
+   "dep": "62",
+   "type": "Maison + terrain",
+   "surface": 2100,
+   "habitable": 138,
+   "prix": 330000,
+   "prixM2": 157,
+   "historiquePrix": [
+    {
+     "date": "2026-11-19",
+     "prix": 330000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjUsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFORygg2BHXDRr6sf8W75hqTOGViolOQm0KVna_p7L-SwENVCmO-ZEw1c8ItSOvQUnWw5aum23WY8CdoOtBo4-dvK_B0NCrmlX9CRzUsH3k6VgP",
+   "dateAnnonce": "2026-11-19",
+   "vuLe": "2026-11-26",
+   "score": null,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-auchel-5700",
+   "titre": "Terrain 5 700 m²",
+   "commune": "Auchel",
+   "insee": "62048",
+   "dep": "62",
+   "type": "Terrain",
+   "surface": 5700,
+   "habitable": null,
+   "prix": 210000,
+   "prixM2": 37,
+   "historiquePrix": [
+    {
+     "date": "2026-11-25",
+     "prix": 210000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://www.seloger.com/annonce/achat/hauts-de-france/pas-de-calais-62/auchel-62260/25Z2JLXR9ZUC",
+   "dateAnnonce": "2026-11-25",
+   "vuLe": "2026-11-25",
+   "score": 70,
+   "scoreCommune": 30,
+   "statut": "nouveau",
+   "pourquoi": "SRU 39,5 % pour 20 %, environ 0 LLS manquants, None demandes en attente. 37 €/m² de terrain (réf. commune 114,8 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "non"
+   },
+   "rang": 77,
+   "taux": 39.5,
+   "cible": 20,
+   "manque": 0,
+   "pm2Terrain": 114.8
+  },
+  {
+   "id": "seloger-baisieux-3055",
+   "titre": "Maison 190 m² sur terrain 3 055 m²",
+   "commune": "Baisieux",
+   "insee": "59044",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 3055,
+   "habitable": 190,
+   "prix": 567000,
+   "prixM2": 186,
+   "historiquePrix": [
+    {
+     "date": "2026-11-24",
+     "prix": 567000
+    }
+   ],
+   "source": "Belles Demeures (SeLoger) (pro)",
+   "url": "https://www.bellesdemeures.com/268407093/detail.htm",
+   "dateAnnonce": "2026-11-24",
+   "vuLe": "2026-11-25",
+   "score": 60,
+   "scoreCommune": 34.1,
+   "statut": "nouveau",
+   "pourquoi": "SRU 17,4 % pour 25 %, environ 167 LLS manquants, 208 demandes en attente. 186 €/m² de terrain (réf. commune 338,3 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "oui"
+   },
+   "rang": 21,
+   "taux": 17.4,
+   "cible": 25,
+   "manque": 167,
+   "pm2Terrain": 338.3
+  },
+  {
+   "id": "seloger-bully-les-mines-2300",
+   "titre": "Maison 180 m² sur terrain 2 300 m²",
+   "commune": "Bully-les-Mines",
+   "insee": null,
+   "dep": "62",
+   "type": "Maison + terrain",
+   "surface": 2300,
+   "habitable": 180,
+   "prix": 208000,
+   "prixM2": 90,
+   "historiquePrix": [
+    {
+     "date": "2026-11-23",
+     "prix": 208000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://www.seloger.com/annonce/achat/hauts-de-france/pas-de-calais-62/bully-les-mines-62160/26DTGCL4EHH4",
+   "dateAnnonce": "2026-11-23",
+   "vuLe": "2026-11-25",
+   "score": 0,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-camon-2585",
+   "titre": "Terrain 2 585 m²",
+   "commune": "Camon",
+   "insee": "80164",
+   "dep": "80",
+   "type": "Terrain",
+   "surface": 2585,
+   "habitable": null,
+   "prix": 75000,
+   "prixM2": 29,
+   "historiquePrix": [
+    {
+     "date": "2026-11-26",
+     "prix": 75000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNzIsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFcEDDKpGDJto9o_TxN_Uciuhtd4XA9FQFPfqi66OxLpQKzQnU9KzBg10krgOyETKcDnIbAk_hiwFpLFV-PWq1iwklwGVeAkmVa34wOBrUb32E",
+   "dateAnnonce": "2026-11-26",
+   "vuLe": "2026-11-26",
+   "score": 61,
+   "scoreCommune": 46,
+   "statut": "nouveau",
+   "pourquoi": "SRU 23,7 % pour 20 %. 29 €/m² de terrain (réf. commune 211,0 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "non"
+   },
+   "rang": 80,
+   "taux": 23.7,
+   "cible": 20,
+   "manque": 0,
+   "pm2Terrain": 211
+  },
+  {
+   "id": "seloger-chereng-4090",
+   "titre": "Terrain 4 090 m²",
+   "commune": "Chéreng",
+   "insee": null,
+   "dep": "59",
+   "type": "Terrain à bâtir",
+   "surface": 4090,
+   "habitable": null,
+   "prix": 499000,
+   "prixM2": 122,
+   "historiquePrix": [
+    {
+     "date": "2026-11-24",
+     "prix": 499000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://www.seloger.com/annonce/achat/hauts-de-france/nord-59/chereng-59152/269PRZU1APQJ",
+   "dateAnnonce": "2026-11-24",
+   "vuLe": "2026-11-25",
+   "score": 0,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-compiegne-14724",
+   "titre": "Maison 862 m² sur terrain 14 724 m²",
+   "commune": "Compiègne",
+   "insee": null,
+   "dep": "60",
+   "type": "Maison + terrain",
+   "surface": 14724,
+   "habitable": 862,
+   "prix": 1485000,
+   "prixM2": 101,
+   "historiquePrix": [
+    {
+     "date": "2026-11-23",
+     "prix": 1485000
+    }
+   ],
+   "source": "Belles Demeures (SeLoger) (pro)",
+   "url": "https://www.bellesdemeures.com/263922711/detail.htm",
+   "dateAnnonce": "2026-11-23",
+   "vuLe": "2026-11-25",
+   "score": 0,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-compiegne-19700",
+   "titre": "Maison 480 m² sur terrain 19 700 m²",
+   "commune": "Compiègne",
+   "insee": null,
+   "dep": "60",
+   "type": "Maison + terrain",
+   "surface": 19700,
+   "habitable": 480,
+   "prix": 1245000,
+   "prixM2": 63,
+   "historiquePrix": [
+    {
+     "date": "2026-11-24",
+     "prix": 1245000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNzAsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFXRQJTWZV1UpzpvZriqF4A-umrJ1bEGctdkoqfi6i76AArEcSIUbFiX1OLpooBDvr38ySV_KMjaiHq8ev9QevdoquFRtW3Gcc_WAniq2gwr029",
+   "dateAnnonce": "2026-11-24",
+   "vuLe": "2026-11-25",
+   "score": 0,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-condette-5000",
+   "titre": "Maison sur terrain 5 000 m²",
+   "commune": "Condette",
+   "insee": null,
+   "dep": "62",
+   "type": "Maison + terrain",
+   "surface": 5000,
+   "habitable": null,
+   "prix": 875500,
+   "prixM2": 175,
+   "historiquePrix": [
+    {
+     "date": "2026-11-19",
+     "prix": 875500
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjUsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFPBk7jse7-y5cfRjrobvx0EAahujaaeo0QY4eM6flOJRihw0a1aeUYBeAO88mroF39NnL6ngo3HvDJv0zj7oy-78uaduQYEvkLAIJtDGEvvEYl",
+   "dateAnnonce": "2026-11-19",
+   "vuLe": "2026-11-25",
+   "score": 0,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "titre": "Terrain 2 084 m²",
    "commune": "Cormontreuil",
    "insee": "51172",
    "dep": "51",
@@ -4001,6 +4710,10 @@
    "prix": 229000,
    "prixM2": 110,
    "historiquePrix": [
+    {
+     "date": "2026-11-18",
+     "prix": 275000
+    },
     {
      "date": "2026-11-19",
      "prix": 229000
@@ -4012,7 +4725,7 @@
    "vuLe": "2026-11-23",
    "score": 50,
    "scoreCommune": 49,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 21 % pour 20 %, environ 0 LLS manquants, None demandes en attente. 110 €/m² de terrain (réf. commune 29,4 €/m²), vendeur non précisé. Baisse de 275 000 à 229 000 € signalée par SeLoger le 19/11 ; peut-être le même terrain que lbc-3209876423 (3 062 m² à 275 000 €).",
    "zonage": {
     "statut": "incertain",
@@ -4026,7 +4739,356 @@
    "pm2Terrain": 29.4
   },
   {
-   "titre": "Terrain 2 852 m²",
+   "id": "seloger-gonnehem-2749",
+   "titre": "Maison 157 m² sur terrain 2 749 m²",
+   "commune": "Gonnehem",
+   "insee": null,
+   "dep": "62",
+   "type": "Maison + terrain",
+   "surface": 2749,
+   "habitable": 157,
+   "prix": 425000,
+   "prixM2": 155,
+   "historiquePrix": [
+    {
+     "date": "2026-11-24",
+     "prix": 425000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://www.seloger.com/annonce/achat/hauts-de-france/pas-de-calais-62/gonnehem-62920/26HAU68Y1ZBR",
+   "dateAnnonce": "2026-11-24",
+   "vuLe": "2026-11-25",
+   "score": 0,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-gruson-3047",
+   "titre": "Terrain 3 047 m²",
+   "commune": "Gruson",
+   "insee": null,
+   "dep": "59",
+   "type": "Terrain",
+   "surface": 3047,
+   "habitable": null,
+   "prix": 468000,
+   "prixM2": 154,
+   "historiquePrix": [
+    {
+     "date": "2026-11-25",
+     "prix": 468000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://www.seloger.com/annonce/achat/hauts-de-france/nord-59/gruson-59152/26RW8F5DJKJ1",
+   "dateAnnonce": "2026-11-25",
+   "vuLe": "2026-11-25",
+   "score": 0,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-gruson-4753",
+   "titre": "Maison 309 m² sur terrain 4 753 m²",
+   "commune": "Gruson",
+   "insee": null,
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 4753,
+   "habitable": 309,
+   "prix": 1690000,
+   "prixM2": 356,
+   "historiquePrix": [
+    {
+     "date": "2026-11-18",
+     "prix": 1690000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjQsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFMS19bYlbSqvEhLnOhB79uLofgbAi5XG-LDaZQZtp4NJFxfI6_Vf21iY7qSVQu3UC34xynuR9qNE_Hu9jOCGAau2e8htzlLna19f6NiPdnpXyh",
+   "dateAnnonce": "2026-11-18",
+   "vuLe": "2026-11-25",
+   "score": 0,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-guines-3800",
+   "titre": "Maison 120 m² sur 3 800 m²",
+   "commune": "Guînes",
+   "insee": null,
+   "dep": "62",
+   "type": "Maison + terrain",
+   "surface": 3800,
+   "habitable": 120,
+   "prix": 315000,
+   "prixM2": 83,
+   "historiquePrix": [
+    {
+     "date": "2026-11-21",
+     "prix": 315000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjcsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFToQEWhvFkm2ONQmM7GZmHweWUmsF3WCDKhJgMSi5s_EUMjoOJkLKt2IK0MwGSZaG5s9cCDLvwmIbW9prxu0TrPRsbKpYc5s3ICk188WZb4rk2",
+   "dateAnnonce": "2026-11-21",
+   "vuLe": "2026-11-26",
+   "score": null,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-hergnies-2175",
+   "titre": "Maison 135 m² sur terrain 2 175 m²",
+   "commune": "Hergnies",
+   "insee": "59301",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 2175,
+   "habitable": 135,
+   "prix": 324600,
+   "prixM2": 149,
+   "historiquePrix": [
+    {
+     "date": "2026-11-23",
+     "prix": 324600
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://www.seloger.com/annonce/achat/hauts-de-france/nord-59/hergnies-59199/26WYKTILNQYK",
+   "dateAnnonce": "2026-11-23",
+   "vuLe": "2026-11-25",
+   "score": 53,
+   "scoreCommune": 31.7,
+   "statut": "nouveau",
+   "pourquoi": "SRU 12,9 % pour 20 %, environ 125 LLS manquants, 78 demandes en attente. 149 €/m² de terrain (réf. commune 80 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "non"
+   },
+   "rang": 28,
+   "taux": 12.9,
+   "cible": 20,
+   "manque": 125,
+   "pm2Terrain": 80
+  },
+  {
+   "id": "seloger-hergnies-2800",
+   "titre": "Maison 184 m² sur 2 800 m²",
+   "commune": "Hergnies",
+   "insee": "59301",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 2800,
+   "habitable": 184,
+   "prix": 237000,
+   "prixM2": 85,
+   "historiquePrix": [
+    {
+     "date": "2026-11-17",
+     "prix": 237000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjMsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFLRGitXAjTzU-yf6ADsqQ7I3t34WxUlvkZdS7rsZOPw54J4yCbw3ktEpG82PQK5mOevy7Wx2Be6-K6olXYz8CvxYviXkYs21do3GqKYYjf",
+   "dateAnnonce": "2026-11-17",
+   "vuLe": "2026-11-26",
+   "score": 67,
+   "scoreCommune": 52.9,
+   "statut": "nouveau",
+   "pourquoi": "SRU 12,9 % pour 20 %, environ 125 LLS manquants, 78 demandes en attente. 85 €/m² de terrain (réf. commune 80,0 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "inconnu"
+   },
+   "rang": 28,
+   "taux": 12.9,
+   "cible": 20,
+   "manque": 125,
+   "pm2Terrain": 80
+  },
+  {
+   "id": "seloger-hergnies-2823",
+   "titre": "Maison 184 m² sur terrain 2 823 m²",
+   "commune": "Hergnies",
+   "insee": "59301",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 2823,
+   "habitable": 184,
+   "prix": 245000,
+   "prixM2": 87,
+   "historiquePrix": [
+    {
+     "date": "2026-11-24",
+     "prix": 245000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://www.seloger.com/annonce/achat/hauts-de-france/nord-59/hergnies-59199/265NK98ZX9I1",
+   "dateAnnonce": "2026-11-24",
+   "vuLe": "2026-11-25",
+   "score": 67,
+   "scoreCommune": 31.7,
+   "statut": "nouveau",
+   "pourquoi": "SRU 12,9 % pour 20 %, environ 125 LLS manquants, 78 demandes en attente. 87 €/m² de terrain (réf. commune 80 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "inconnu"
+   },
+   "rang": 28,
+   "taux": 12.9,
+   "cible": 20,
+   "manque": 125,
+   "pm2Terrain": 80
+  },
+  {
+   "id": "seloger-houplines-6580",
+   "titre": "Maison 570 m² sur terrain 6 580 m²",
+   "commune": "Houplines",
+   "insee": "59317",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 6580,
+   "habitable": 570.3,
+   "prix": 1030000,
+   "prixM2": 157,
+   "historiquePrix": [
+    {
+     "date": "2026-11-25",
+     "prix": 1030000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://www.seloger.com/annonce/achat/hauts-de-france/nord-59/houplines-59116/26WB7325HMCJ",
+   "dateAnnonce": "2026-11-25",
+   "vuLe": "2026-11-25",
+   "score": 34,
+   "scoreCommune": 34.1,
+   "statut": "nouveau",
+   "pourquoi": "Zone A/N probable. SRU 19 % pour 25 %, environ 189 LLS manquants, 233 demandes en attente. 157 €/m² de terrain (pas de référence communale), vendeur pro.",
+   "zonage": {
+    "statut": "probable",
+    "constructible": "non",
+    "zone": "A",
+    "zoneLong": "Zone agricole",
+    "lat": 50.6816,
+    "lon": 2.933956
+   },
+   "rang": 20,
+   "taux": 19,
+   "cible": 25,
+   "manque": 189,
+   "pm2Terrain": null
+  },
+  {
+   "id": "seloger-jaux-3550",
+   "titre": "Terrain 3 550 m²",
+   "commune": "Jaux",
+   "insee": null,
+   "dep": "60",
+   "type": "Terrain à bâtir",
+   "surface": 3550,
+   "habitable": null,
+   "prix": 120000,
+   "prixM2": 34,
+   "historiquePrix": [
+    {
+     "date": "2026-11-21",
+     "prix": 120000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjcsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFTpKOyD9lesEnxl8-PLCI-NINkW6kukAhvLn6r_k0PK_4qJnm06Jx5Un-U4puRTKfv-3kji8SgRAc5dl9TTJ3TSCrGtROEzBJtmIVO_mYLOBD3",
+   "autresAnnonces": [
+    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjgsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFTucZUF3uV-njuRAln4tPZrW6RiGL_DCptxcujtRXFLrQLjek9AmDyv6bA7exRrufLxdFJ0uOu7KXv1n0EWWjdaRYtl0ZziB7wKYnGVPjetzcK"
+   ],
+   "dateAnnonce": "2026-11-21",
+   "vuLe": "2026-11-26",
+   "score": null,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-la-gorgue-16958",
+   "titre": "Maison 389 m² sur 16 958 m²",
+   "commune": "La Gorgue",
+   "insee": "59268",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 16958,
+   "habitable": 389,
+   "prix": 1250000,
+   "prixM2": 74,
+   "historiquePrix": [
+    {
+     "date": "2026-11-22",
+     "prix": 1250000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjgsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFTqevv0a-c4eM8mfo90L5ilPjPx2W2LaIP8vjw92cd8FEchavHvzWdaaDZaQu3KTPo-n8XTxyL5sbYs-5RJVABmm5Tv1nrpkiYXiv16H7tmewb",
+   "dateAnnonce": "2026-11-22",
+   "vuLe": "2026-11-26",
+   "score": 60,
+   "scoreCommune": 33.7,
+   "statut": "nouveau",
+   "pourquoi": "SRU 21,1 % pour 20 %, 225 demandes en attente. 74 €/m² de terrain (réf. commune non renseignée), vendeur pro. Remonté par SeLoger avec des critères élargis.",
+   "zonage": {
+    "statut": "probable",
+    "constructible": "inconnu",
+    "lat": 50.638168,
+    "lon": 2.763618
+   },
+   "rang": 58,
+   "taux": 21.1,
+   "cible": 20,
+   "manque": 0,
+   "pm2Terrain": null
+  },
+  {
+   "id": "seloger-la-gorgue-5564",
+   "titre": "Maison 140 m² sur terrain 5 564 m²",
+   "commune": "La Gorgue",
+   "insee": "59268",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 5564,
+   "habitable": 140,
+   "prix": 425000,
+   "prixM2": 76,
+   "historiquePrix": [
+    {
+     "date": "2026-11-24",
+     "prix": 425000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://www.seloger.com/annonce/achat/hauts-de-france/nord-59/la-gorgue-59253/26ITIDZKB3HA",
+   "dateAnnonce": "2026-11-24",
+   "vuLe": "2026-11-25",
+   "score": 60,
+   "scoreCommune": 20.2,
+   "statut": "nouveau",
+   "pourquoi": "SRU 21,1 % pour 20 %, environ 0 LLS manquants, 225 demandes en attente. 76 €/m² de terrain (pas de référence communale), vendeur pro.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "inconnu"
+   },
+   "rang": 58,
+   "taux": 21.1,
+   "cible": 20,
+   "manque": 0,
+   "pm2Terrain": null
+  },
+  {
+   "titre": "Terrain 2 852 m²",
    "commune": "Lestrem",
    "insee": "62502",
    "dep": "62",
@@ -4047,7 +5109,7 @@
    "vuLe": "2026-11-23",
    "score": 62,
    "scoreCommune": 44.6,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 16,4 % pour 20 %, environ 71 LLS manquants, 144 demandes en attente. 41 €/m² de terrain (réf. commune 71,4 €/m²), vendeur non précisé.",
    "zonage": {
     "statut": "incertain",
@@ -4061,7 +5123,46 @@
    "pm2Terrain": 71.4
   },
   {
-   "titre": "Maison 221 m² sur terrain 2 200 m²",
+   "id": "seloger-lestrem-6931",
+   "titre": "Maison semi plain-pied 196,5 m² sur 6 931 m²",
+   "commune": "Lestrem",
+   "insee": "62502",
+   "dep": "62",
+   "type": "Maison + terrain",
+   "surface": 6931,
+   "habitable": 196.5,
+   "prix": 444900,
+   "prixM2": 64,
+   "historiquePrix": [
+    {
+     "date": "2026-11-25",
+     "prix": 444900
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNzEsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFaoRivHmyMRUOMvhzlN6BAr4ZwFiVdIB7RtHTjaj6SDBCMNhP5GYVXMZMM2IHREGQ1bg-ksLP46YG31VhbmR33zZqZipM9EMAcZOjTNLhsIFw",
+   "dateAnnonce": "2026-11-25",
+   "vuLe": "2026-11-26",
+   "score": 37,
+   "scoreCommune": 44.6,
+   "statut": "nouveau",
+   "pourquoi": "Zone A/N probable. SRU 16,4 % pour 20 %, environ 71 LLS manquants, 144 demandes en attente. 64 €/m² de terrain (réf. commune 71,4 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "probable",
+    "constructible": "non",
+    "zone": "A",
+    "zoneLong": "Zone exclusivement agricole",
+    "lat": 50.597072,
+    "lon": 2.657697
+   },
+   "rang": 39,
+   "taux": 16.4,
+   "cible": 20,
+   "manque": 71,
+   "pm2Terrain": 71.4
+  },
+  {
+   "titre": "Maison 221 m² sur terrain 2 200 m²",
    "commune": "Longueil-Sainte-Marie",
    "insee": null,
    "dep": "60",
@@ -4087,7 +5188,176 @@
    "id": "seloger-longueil-sainte-marie-2200"
   },
   {
-   "titre": "Maison 101 m² sur terrain 5 513 m²",
+   "id": "seloger-lorgies-5884",
+   "titre": "Fermette rénovée 315 m² sur 5 884 m²",
+   "commune": "Lorgies",
+   "insee": null,
+   "dep": "62",
+   "type": "Maison + terrain",
+   "surface": 5884,
+   "habitable": 315,
+   "prix": 950000,
+   "prixM2": 161,
+   "historiquePrix": [
+    {
+     "date": "2026-11-26",
+     "prix": 950000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNzIsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFbsm1DaERFUQiiqw_j2xKuqQcxgsYbwfgUEVc01dZwTRZZv-qpOYld0N6CdrbcAQCoND2FrPvVbgti4mh40oG1AvMTtUJlaXH2a0IKC-BjEyc1",
+   "dateAnnonce": "2026-11-26",
+   "vuLe": "2026-11-26",
+   "score": null,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-marck-3682",
+   "titre": "Ancien corps de ferme 145 m² sur 3 682 m²",
+   "commune": "Marck",
+   "insee": "62548",
+   "dep": "62",
+   "type": "Maison + terrain",
+   "surface": 3682,
+   "habitable": 145,
+   "prix": 229420,
+   "prixM2": 62,
+   "historiquePrix": [
+    {
+     "date": "2026-11-25",
+     "prix": 229420
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNzEsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFaoTC1ZUzmpbRzlBelz9rHZLPuJ1KGqyoW7T4oSxu3hCAd_qUvotwzBZ1-1WKbr-80fVV-aUSFwyfPFX6pLjYnGkcFFiJIvdzkUfCJcNhZaGsD",
+   "dateAnnonce": "2026-11-25",
+   "vuLe": "2026-11-26",
+   "score": 40,
+   "scoreCommune": 52.5,
+   "statut": "nouveau",
+   "pourquoi": "Zone A/N probable. SRU 17,0 % pour 20 %, environ 120 LLS manquants, 415 demandes en attente. 62 €/m² de terrain (réf. commune 164,9 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "probable",
+    "constructible": "non",
+    "zone": "A",
+    "zoneLong": "zone naturelle non equipee a vocation agricole et forestiere",
+    "lat": 50.983476,
+    "lon": 1.975806
+   },
+   "rang": 29,
+   "taux": 17,
+   "cible": 20,
+   "manque": 120,
+   "pm2Terrain": 164.9
+  },
+  {
+   "id": "seloger-millonfosse-2500",
+   "titre": "Maison 177 m² sur terrain 2 500 m²",
+   "commune": "Millonfosse",
+   "insee": null,
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 2500,
+   "habitable": 177,
+   "prix": 379000,
+   "prixM2": 152,
+   "historiquePrix": [
+    {
+     "date": "2026-11-25",
+     "prix": 379000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://www.seloger.com/annonce/achat/hauts-de-france/nord-59/millonfosse-59178/26DN81CLYX7H",
+   "dateAnnonce": "2026-11-25",
+   "vuLe": "2026-11-25",
+   "score": 0,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-monchy-saint-eloi-3216",
+   "titre": "Maison 150 m² sur terrain 3 216 m²",
+   "commune": "Monchy-Saint-Éloi",
+   "insee": null,
+   "dep": "60",
+   "type": "Maison + terrain",
+   "surface": 3216,
+   "habitable": 150,
+   "prix": 468000,
+   "prixM2": 146,
+   "historiquePrix": [
+    {
+     "date": "2026-11-23",
+     "prix": 468000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://www.seloger.com/annonce/achat/hauts-de-france/oise-60/monchy-saint-eloi-60290/26JTNQ8FPDB5",
+   "dateAnnonce": "2026-11-23",
+   "vuLe": "2026-11-25",
+   "score": 0,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-mons-en-pevele-2490",
+   "titre": "Maison 210 m² sur 2 490 m²",
+   "commune": "Mons-en-Pévèle",
+   "insee": null,
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 2490,
+   "habitable": 210,
+   "prix": 365000,
+   "prixM2": 147,
+   "historiquePrix": [
+    {
+     "date": "2026-11-21",
+     "prix": 365000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjcsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFSesEVhGFrRz-MVgdpH-Fht78BiND6vM3oUJWeSGFV-XKm-EMfi8q6VbDs0XsuCMPHvVt72x3d8v_jvEy6C37AieRDq0KfikMb41rktzFHzr4G",
+   "dateAnnonce": "2026-11-21",
+   "vuLe": "2026-11-26",
+   "score": null,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-raches-2791",
+   "titre": "Maison 160 m² sur terrain 2 791 m²",
+   "commune": "Râches",
+   "insee": null,
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 2791,
+   "habitable": 160,
+   "prix": 289800,
+   "prixM2": 104,
+   "historiquePrix": [
+    {
+     "date": "2026-11-23",
+     "prix": 289800
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjksInQiOjYwMzAsInMiOjUxfQAzAAAAAAFWyThypUa-FjOwPX2JThC1DUHJa-3knUgHrJGmC-hDZzeVP4LUudtgtWgWo5PlN7SP8JqFZWD8MWhByp8jvNI_H1N7hCaMVQKbPKCFAVLt9cP1",
+   "dateAnnonce": "2026-11-23",
+   "vuLe": "2026-11-25",
+   "score": 0,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "titre": "Maison 101 m² sur terrain 5 513 m²",
    "commune": "Raimbeaucourt",
    "insee": "59489",
    "dep": "59",
@@ -4108,7 +5378,7 @@
    "vuLe": "2026-11-23",
    "score": 63,
    "scoreCommune": 37.6,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 17,3 % pour 20 %, environ 45 LLS manquants, 105 demandes en attente. 54 €/m² de terrain (réf. commune 117,7 €/m²), vendeur non précisé.",
    "zonage": {
     "statut": "introuvable",
@@ -4122,7 +5392,62 @@
    "pm2Terrain": 117.7
   },
   {
-   "titre": "Terrain 2 766 m²",
+   "id": "seloger-rieux-4900",
+   "titre": "Maison 340 m² sur 4 900 m²",
+   "commune": "Rieux",
+   "insee": null,
+   "dep": "60",
+   "type": "Maison + terrain",
+   "surface": 4900,
+   "habitable": 340,
+   "prix": 830000,
+   "prixM2": 169,
+   "historiquePrix": [
+    {
+     "date": "2026-11-18",
+     "prix": 830000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjQsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFLpDGtxEm_sNINXZZrfLOwrpvJ6XLAHuCL8dbXbgsGkldRsRqhQdJtbAznfnf5nN_zEfJnaHdhoPZUxKa41ktXBWT7VXVCg6KDkmbfgd4s_RED",
+   "dateAnnonce": "2026-11-18",
+   "vuLe": "2026-11-26",
+   "score": null,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-roost-warendin-14400",
+   "titre": "Maison 173 m² sur terrain 14 400 m²",
+   "commune": "Roost-Warendin",
+   "insee": null,
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 14400,
+   "habitable": 173,
+   "prix": 470000,
+   "prixM2": 33,
+   "historiquePrix": [
+    {
+     "date": "2026-11-24",
+     "prix": 470000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://www.seloger.com/annonce/achat/hauts-de-france/nord-59/roost-warendin-59286/264ERTRRQRDG",
+   "autresAnnonces": [
+    "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjcsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFTIYUtVatWlgpviWf3m_rxLIJCyEGXGc8tnM3AfSM0C5cm_9PbBW6zd04ZtJiQtitzyYJIhqxCl2FjpVnagZu6SFfJjVNdDy6hjoIZ8ZDhzRJD"
+   ],
+   "dateAnnonce": "2026-11-24",
+   "vuLe": "2026-11-25",
+   "score": 0,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "titre": "Terrain 2 766 m²",
    "commune": "Sailly-Sur-La-Lys",
    "insee": "62736",
    "dep": "62",
@@ -4143,7 +5468,7 @@
    "vuLe": "2026-11-23",
    "score": 38,
    "scoreCommune": 55.5,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "Zone A/N probable. SRU 11,2 % pour 20 %, environ 142 LLS manquants, 87 demandes en attente. 43 €/m² de terrain (réf. commune 199,9 €/m²), vendeur non précisé.",
    "zonage": {
     "statut": "probable",
@@ -4161,7 +5486,94 @@
    "pm2Terrain": 199.9
   },
   {
-   "titre": "Maison 355 m² sur terrain 2 500 m²",
+   "id": "seloger-saint-vaast-de-longmont-2018",
+   "titre": "Maison 147 m² sur terrain 2 018 m²",
+   "commune": "Saint-Vaast-de-Longmont",
+   "insee": null,
+   "dep": "60",
+   "type": "Maison + terrain",
+   "surface": 2018,
+   "habitable": 147,
+   "prix": 349000,
+   "prixM2": 173,
+   "historiquePrix": [
+    {
+     "date": "2026-11-25",
+     "prix": 349000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://www.seloger.com/annonce/achat/hauts-de-france/oise-60/saint-vaast-de-longmont-60410/26EGEFLUTU2T",
+   "dateAnnonce": "2026-11-25",
+   "vuLe": "2026-11-25",
+   "score": 0,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-saintines-28000",
+   "titre": "Maison 784 m² sur 28 000 m²",
+   "commune": "Saintines",
+   "insee": null,
+   "dep": "60",
+   "type": "Maison + terrain",
+   "surface": 28000,
+   "habitable": 784,
+   "prix": 900000,
+   "prixM2": 32,
+   "historiquePrix": [
+    {
+     "date": "2026-11-18",
+     "prix": 900000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjQsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFLugW_EEDh3L5gPuK0zHaO6g2X7EZCdVLq33Cr4S5HW3SU0Pd6770gsuuMpQde9U1-l8OZuWAdp8dEraQzPDBgBnaN-IZkizRMhrPu3Fb5pIg8",
+   "dateAnnonce": "2026-11-18",
+   "vuLe": "2026-11-26",
+   "score": null,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-santes-2300",
+   "titre": "Maison 255 m² sur 2 300 m²",
+   "commune": "Santes",
+   "insee": "59553",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 2300,
+   "habitable": 255,
+   "prix": 1190000,
+   "prixM2": 517,
+   "historiquePrix": [
+    {
+     "date": "2026-11-17",
+     "prix": 1190000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjMsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFLb38sFf6AmcEahDgBP4SvuLZgR9zRGpps8IQIO7lhi_Y9LzIkdSB-ZSSt1eKKHh8A1DkxHJwY7j8VF6qvnhdPcOkYsXoNqNQszcP46OrprMw",
+   "dateAnnonce": "2026-11-17",
+   "vuLe": "2026-11-26",
+   "score": 45,
+   "scoreCommune": 55.4,
+   "statut": "nouveau",
+   "pourquoi": "SRU 12,5 % pour 25 %, environ 286 LLS manquants, 156 demandes en attente. 517 €/m² de terrain (réf. commune 229,5 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "oui"
+   },
+   "rang": 25,
+   "taux": 12.5,
+   "cible": 25,
+   "manque": 286,
+   "pm2Terrain": 229.5
+  },
+  {
+   "titre": "Maison 355 m² sur terrain 2 500 m²",
    "commune": "Steenvoorde",
    "insee": "59580",
    "dep": "59",
@@ -4182,7 +5594,7 @@
    "vuLe": "2026-11-23",
    "score": 64,
    "scoreCommune": 68.6,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 9,8 % pour 20 %, environ 183 LLS manquants, 146 demandes en attente. 190 €/m² de terrain (réf. commune 42 €/m²), vendeur non précisé.",
    "zonage": {
     "statut": "incertain",
@@ -4196,7 +5608,42 @@
    "pm2Terrain": 42
   },
   {
-   "titre": "Maison 100 m² sur terrain 4 000 m²",
+   "id": "seloger-thumeries-2119",
+   "titre": "Maison 10 pièces 162 m² sur 2 119 m²",
+   "commune": "Thumeries",
+   "insee": "59592",
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 2119,
+   "habitable": 162,
+   "prix": 333000,
+   "prixM2": 157,
+   "historiquePrix": [
+    {
+     "date": "2026-11-26",
+     "prix": 333000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNzIsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFbdHQJivx9efM3O8UOyaHHy7D2CZ3CcOnOg7fN7cTnQwIlVwfUhs2NjBlbcLOdbqBI5lyAWcO61GIO4CfnGzXwoaFfB-ODbU9FA7744yEBCg",
+   "dateAnnonce": "2026-11-26",
+   "vuLe": "2026-11-26",
+   "score": 48,
+   "scoreCommune": 46,
+   "statut": "nouveau",
+   "pourquoi": "SRU 12,6 % pour 20 %, environ 121 LLS manquants, 167 demandes en attente. 157 €/m² de terrain (réf. commune 284,3 €/m²), vendeur pro.",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "inconnu"
+   },
+   "rang": 36,
+   "taux": 12.6,
+   "cible": 20,
+   "manque": 121,
+   "pm2Terrain": 284.3
+  },
+  {
+   "titre": "Maison 100 m² sur terrain 4 000 m²",
    "commune": "Verberie",
    "insee": "60667",
    "dep": "60",
@@ -4217,7 +5664,7 @@
    "vuLe": "2026-11-23",
    "score": 66,
    "scoreCommune": 43,
-   "statut": "nouveau",
+   "statut": "ecarte",
    "pourquoi": "SRU 26,2 % pour 20 %, environ 0 LLS manquants, None demandes en attente. 30 €/m² de terrain (réf. commune 131 €/m²), vendeur pro.",
    "zonage": {
     "statut": "incertain",
@@ -4229,6 +5676,158 @@
    "cible": 20,
    "manque": 0,
    "pm2Terrain": 131
+  },
+  {
+   "id": "seloger-vieux-conde-2400",
+   "titre": "Maison 150 m² sur terrain 2 400 m²",
+   "commune": "Vieux-Condé",
+   "insee": null,
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 2400,
+   "habitable": 150,
+   "prix": 124500,
+   "prixM2": 52,
+   "historiquePrix": [
+    {
+     "date": "2026-11-25",
+     "prix": 124500
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://www.seloger.com/annonce/achat/hauts-de-france/nord-59/vieux-conde-59690/26U9YB9YDKZ9",
+   "dateAnnonce": "2026-11-25",
+   "vuLe": "2026-11-25",
+   "score": 0,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-vieux-conde-2850",
+   "titre": "Maison 278 m² sur terrain 2 850 m²",
+   "commune": "Vieux-Condé",
+   "insee": null,
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 2850,
+   "habitable": 278,
+   "prix": 570000,
+   "prixM2": 200,
+   "historiquePrix": [
+    {
+     "date": "2026-11-24",
+     "prix": 570000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://www.seloger.com/annonce/achat/hauts-de-france/nord-59/vieux-conde-59690/25YPTAQ1IYVK",
+   "dateAnnonce": "2026-11-24",
+   "vuLe": "2026-11-25",
+   "score": 0,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-violaines-2171",
+   "titre": "Maison semi plain-pied 166 m² sur 2 171 m²",
+   "commune": "Violaines",
+   "insee": "62863",
+   "dep": "62",
+   "type": "Maison + terrain",
+   "surface": 2171,
+   "habitable": 166,
+   "prix": 265000,
+   "prixM2": 122,
+   "historiquePrix": [
+    {
+     "date": "2026-11-26",
+     "prix": 265000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNzIsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFb2i1eZoJ2Rhcw8yJplq-0bUEYC2SLK8AjDMgmtngu4ih0htIK_VIP3Tt-vH9mYgNOADddaovF5txeM1staRtpX5LodVg_5r379dj7CaSiNDo",
+   "dateAnnonce": "2026-11-26",
+   "vuLe": "2026-11-26",
+   "score": 40,
+   "scoreCommune": 30.8,
+   "statut": "nouveau",
+   "pourquoi": "SRU 22,0 % pour 20 %, 141 demandes en attente. 122 €/m² de terrain (réf. commune non renseignée), vendeur pro. Prix passé de 279 575 à 265 000 € (baisse signalée par SeLoger le 26/11).",
+   "zonage": {
+    "statut": "incertain",
+    "constructible": "inconnu"
+   },
+   "rang": 65,
+   "taux": 22,
+   "cible": 20,
+   "manque": 0,
+   "pm2Terrain": null
+  },
+  {
+   "id": "seloger-wattignies-2100",
+   "titre": "Maison 200 m² sur terrain 2 100 m²",
+   "commune": "Wattignies",
+   "insee": null,
+   "dep": "59",
+   "type": "Maison + terrain",
+   "surface": 2100,
+   "habitable": 200,
+   "prix": 600000,
+   "prixM2": 286,
+   "historiquePrix": [
+    {
+     "date": "2026-11-25",
+     "prix": 600000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://www.seloger.com/annonce/achat/hauts-de-france/nord-59/wattignies-59139/26NRHRFALHXC",
+   "dateAnnonce": "2026-11-25",
+   "vuLe": "2026-11-25",
+   "score": 0,
+   "scoreCommune": null,
+   "statut": "ecarte",
+   "pourquoi": "Commune hors cible SRU"
+  },
+  {
+   "id": "seloger-witry-les-reims-2878",
+   "titre": "Maison 247 m² sur 2 878 m²",
+   "commune": "Witry-lès-Reims",
+   "insee": "51662",
+   "dep": "51",
+   "type": "Maison + terrain",
+   "surface": 2878,
+   "habitable": 247,
+   "prix": 780000,
+   "prixM2": 271,
+   "historiquePrix": [
+    {
+     "date": "2026-11-18",
+     "prix": 780000
+    }
+   ],
+   "source": "SeLoger (pro)",
+   "url": "https://click.by.seloger.com/?qs=ABp7ImQiOjUwNjQsInQiOjYwMzAsInMiOjUxfQAzAAAAAAFMDNuEE9uflXqydxy3WQUH4QLaiSJIt6Nl_o_FRAyAFGuJDYkyunptKlW0J0AQwWYMX-R390CTPgmBO8NOTiziyKhxuG0Gj6sfQF6tQMxkHw",
+   "dateAnnonce": "2026-11-18",
+   "vuLe": "2026-11-26",
+   "score": 34,
+   "scoreCommune": 32,
+   "statut": "nouveau",
+   "pourquoi": "SRU 29,8 % pour 20 %. 271 €/m² de terrain (réf. commune 300,3 €/m²), vendeur pro. Remonté par SeLoger avec des critères élargis.",
+   "zonage": {
+    "statut": "probable",
+    "constructible": "oui",
+    "zone": "UDa",
+    "zoneLong": "Zone urbaine - Extension périphérique",
+    "lat": 49.290788,
+    "lon": 4.12237
+   },
+   "rang": 84,
+   "taux": 29.8,
+   "cible": 20,
+   "manque": 0,
+   "pm2Terrain": 300.3
   }
  ]
 }
